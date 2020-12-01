@@ -1,0 +1,11 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-dark text-light;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    @apply bg-light text-dark;
+  }
+}

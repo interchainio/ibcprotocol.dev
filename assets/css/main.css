@@ -2,6 +2,10 @@
   body {
     @apply bg-dark text-light;
   }
+
+  .fill {
+    fill: #FFF1F1;
+  }
 }
 
 @media (prefers-color-scheme: light) {

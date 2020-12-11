@@ -15,6 +15,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '~/assets/css/fonts.css',
     '~/assets/css/main.css',
   ],
 
@@ -28,8 +29,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -42,5 +41,16 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    "postcss": {
+      "plugins": {
+        "tailwindcss": {},
+        "autoprefixer": {},
+        "postcss-nested": {},
+        "postcss-preset-env": {
+          "stage": 0
+        }
+      }
+    },
+  },
 }

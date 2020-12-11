@@ -1,0 +1,11 @@
+@font-face {
+    font-family:"GTA-Exp";
+    src:url("../fonts/GTA-Exp.woff2") format("woff2"),url("../fonts/GTA-Exp.woff") format("woff"),url("../fonts/GTA-Exp.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"PT";
+    src:url("../fonts/PTSerif-Regular.ttf") format("truetype");
+    font-style:normal;font-weight:400;
+}

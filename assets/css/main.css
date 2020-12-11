@@ -1,3 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'GTA-Exp', 'Helvetica', 'Arial', sans-serif;
+}
+
+.f-serif {
+  font-family: 'PT', 'Times New Roman', serif;
+}
+
+.button {
+  @apply uppercase inline-block text-center py-3 text-xl rounded-full;
+  width: 320px;
+}
+
+p+p {
+  @apply mt-3;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     @apply bg-dark text-light;
@@ -6,10 +27,19 @@
   .fill {
     fill: #FFF1F1;
   }
+
+  .button {
+    @apply bg-light text-dark;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   body {
     @apply bg-light text-dark;
   }
+
+  .button {
+    @apply bg-dark text-light;
+  }
 }
+

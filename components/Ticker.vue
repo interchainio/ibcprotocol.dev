@@ -1,12 +1,12 @@
 <template>
   <div class="marquee text-xs flex">
     <div class="marquee__iner">
-      <marquee-text :duration="1000">
+      <marquee-text :duration="duration">
         <span
           v-for="n in 100"
           :key="n"
           class="uppercase flex-grow whitespace-nowrap mr-1"
-          >Inter-Blockchain Communication</span
+          >{{ text }}</span
         >
       </marquee-text>
     </div>
@@ -20,6 +20,17 @@ export default {
   name: 'Ticker',
 
   components: { MarqueeText },
+
+  props: {
+    text: {
+      type: String,
+      default: ' ',
+    },
+    duration: {
+      type: Number,
+      default: 1000,
+    },
+  },
 }
 </script>
 

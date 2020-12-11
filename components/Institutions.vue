@@ -22,7 +22,7 @@
       </ul>
     </div>
     <div class="border-t border-b border-white">
-      <Ticker />
+      <Ticker :text="tickerText" :duration="tickerDuration" />
     </div>
   </div>
 </template>
@@ -43,6 +43,14 @@ export default {
   computed: {
     isNarrow() {
       return window.innerWidth < 768
+    },
+
+    tickerText() {
+      return this.$store.state.meta.ticker.text
+    },
+
+    tickerDuration() {
+      return this.$store.state.meta.ticker.duration
     },
   },
 }

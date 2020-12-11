@@ -5,7 +5,7 @@
         class="flex justify-center items-center overflow-visible w-0 h-0 rotated"
       >
         <div class="w-screen border-t border-b border-white">
-          <Ticker />
+          <Ticker :text="tickerText" :duration="tickerDuration" />
         </div>
       </div>
     </div>
@@ -34,6 +34,16 @@ import Ticker from '~/components/Ticker'
 
 export default {
   components: { Ticker },
+
+  computed: {
+    tickerText() {
+      return this.$store.state.meta.ticker.text
+    },
+
+    tickerDuration() {
+      return this.$store.state.meta.ticker.duration
+    },
+  },
 }
 </script>
 

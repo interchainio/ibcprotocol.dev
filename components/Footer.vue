@@ -4,7 +4,7 @@
       <div
         class="flex justify-center items-center overflow-visible w-0 h-0 rotated"
       >
-        <div class="w-screen border-t border-b border-white">
+        <div class="w-screen border-t border-b border-gray">
           <Ticker :text="tickerText" :duration="tickerDuration" />
         </div>
       </div>

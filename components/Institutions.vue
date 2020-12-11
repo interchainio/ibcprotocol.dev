@@ -5,15 +5,15 @@
         IBC is developed by a<br />diverse group of institutions
       </h1>
     </div>
-    <div class="border-t border-white">
+    <div class="border-t border-gray">
       <ul class="mx-auto max-w-6xl flex flex-wrap">
         <li
           v-for="(institution, index) in institutions"
           :key="index"
-          class="box-tall w-1/2 md:w-1/3 border-grid-2 md:border-grid-3 border-white flex justify-center items-center"
+          class="box-tall w-1/2 md:w-1/3 border-grid-2 md:border-grid-3 border-gray flex justify-center items-center"
         >
           <a
-            class="text-2xl f-serif w-full h-full flex justify-center items-center"
+            class="text-lg md:text-2xl f-serif w-full h-full flex justify-center items-center"
             target="_blank"
             :href="institution.link"
             >{{ institution.name }}</a
@@ -21,7 +21,7 @@
         </li>
       </ul>
     </div>
-    <div class="border-t border-b border-white">
+    <div class="border-t border-b border-gray">
       <Ticker :text="tickerText" :duration="tickerDuration" />
     </div>
   </div>

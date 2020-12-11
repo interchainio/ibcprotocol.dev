@@ -14,7 +14,7 @@
         }"
       >
         <div
-          class="container relative flex border border-white justify-between w-full box-tall"
+          class="container relative flex border border-gray justify-between w-full box-tall"
         >
           <div class="p-6">
             <div class="uppercase text-sm mb-8">{{ c.title }}</div>
@@ -22,10 +22,10 @@
           </div>
           <div>
             <a
-              class="bg-white w-16 h-16 flex justify-center items-center"
+              class="box-link w-16 h-16 flex justify-center items-center"
               :href="c.link"
             >
-              <img src="~/assets/images/arrow.svg" />
+              <img class="arrow" src="~/assets/images/arrow.svg" />
             </a>
           </div>
         </div>
@@ -68,7 +68,6 @@ export default {
   border-style: solid;
 }
 
-/* this border color controlls the color of the triangle (what looks like the fill of the triangle) */
 .container:after {
   left: 43px;
   bottom: -48px;
@@ -76,11 +75,33 @@ export default {
   border-width: 24px;
 }
 
-/* this border color controlls the outside, thin border */
 .container:before {
   left: 42px;
   bottom: -50px;
-  border-color: white transparent transparent white;
+  border-color: #fff1f1 transparent transparent #fff1f1;
   border-width: 25px;
+}
+
+.box-link {
+  @apply bg-white;
+}
+
+@media (prefers-color-scheme: light) {
+  .box-link {
+    @apply bg-dark;
+  }
+
+  .arrow {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  .container:after {
+    border-color: #fff1f1 transparent transparent #fff1f1;
+  }
+
+  .container:before {
+    border-color: #323232 transparent transparent #323232;
+  }
 }
 </style>

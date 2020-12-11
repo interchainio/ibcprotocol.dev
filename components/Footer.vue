@@ -12,10 +12,7 @@
     <div
       class="flex flex-col md:flex-row justify-between md:items-end pt-16 lg:pt-8"
     >
-      <img
-        class="p-12 w-2/3 md:w-1/3 xl:w-1/2"
-        src="~/assets/images/footer-logo.svg"
-      />
+      <LogoFooter class="p-12 w-2/3 md:w-1/3 xl:w-1/2" />
       <div class="p-12 uppercase text-xs md:text-sm text-right">
         <div>INTER-BLOCKCHAIN COMMUNICATION</div>
         <div>
@@ -31,9 +28,10 @@
 
 <script>
 import Ticker from '~/components/Ticker'
+import LogoFooter from '~/components/LogoFooter'
 
 export default {
-  components: { Ticker },
+  components: { Ticker, LogoFooter },
 
   computed: {
     tickerText() {

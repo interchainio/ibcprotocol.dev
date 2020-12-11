@@ -34,6 +34,10 @@ p + p {
     @apply bg-light text-dark;
   }
 
+  .fill {
+    fill: #323232;
+  }
+
   .button {
     @apply bg-dark text-light;
   }

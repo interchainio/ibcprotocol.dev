@@ -1,0 +1,55 @@
+<template>
+  <div class="mt-16">
+    <div class="mx-auto px-12 max-w-6xl">
+      <h1 class="text-3xl uppercase mb-8">
+        IBC is developed by a<br />diverse group of institutions
+      </h1>
+    </div>
+    <div class="border-t border-white">
+      <ul class="mx-auto max-w-6xl flex flex-wrap">
+        <li
+          v-for="(institution, index) in institutions"
+          :key="index"
+          class="box-tall w-1/2 md:w-1/3 border-grid-2 md:border-grid-3 border-white flex justify-center items-center"
+        >
+          <a
+            class="text-2xl f-serif w-full h-full flex justify-center items-center"
+            target="_blank"
+            :href="institution.link"
+            >{{ institution.name }}</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="border-t border-b border-white">
+      <Ticker />
+    </div>
+  </div>
+</template>
+
+<script>
+import Ticker from '~/components/Ticker'
+
+export default {
+  components: { Ticker },
+
+  props: {
+    institutions: {
+      type: Array,
+      required: true,
+    },
+  },
+
+  computed: {
+    isNarrow() {
+      return window.innerWidth < 768
+    },
+  },
+}
+</script>
+
+<style scoped>
+.box-tall {
+  height: 220px;
+}
+</style>

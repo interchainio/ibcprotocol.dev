@@ -1,19 +1,25 @@
 <template>
   <div class="marquee text-xs flex">
     <div class="marquee__iner">
-      <span
-        v-for="n in 100"
-        :key="n"
-        class="uppercase flex-grow whitespace-nowrap mr-1"
-        >Inter-Blockchain Communication</span
-      >
+      <marquee-text :duration="1000">
+        <span
+          v-for="n in 100"
+          :key="n"
+          class="uppercase flex-grow whitespace-nowrap mr-1"
+          >Inter-Blockchain Communication</span
+        >
+      </marquee-text>
     </div>
   </div>
 </template>
 
 <script>
+import MarqueeText from 'vue-marquee-text-component'
+
 export default {
   name: 'Ticker',
+
+  components: { MarqueeText },
 }
 </script>
 

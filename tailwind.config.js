@@ -2,11 +2,11 @@ module.exports = {
   theme: {
     extend: {
       transitionDuration: {
-        '0': '0ms',
-        '650': '650ms',
-        '2000': '2000ms',
+        0: '0ms',
+        650: '650ms',
+        2000: '2000ms',
       },
-      inset: theme => ({
+      inset: (theme) => ({
         ...theme('spacing'),
       }),
     },
@@ -17,6 +17,8 @@ module.exports = {
       current: 'currentColor',
       red: '#FF5520',
       salmon: '#FF7777',
+      gradientRed: '#E46A56',
+      gradientPurple: '#6773E2',
       blue: '#206CFF',
       green: 'rgb(0,255,0)',
       orange: '#FF5520',
@@ -26,15 +28,16 @@ module.exports = {
       light: '#FFF1F1',
     },
     fontSize: {
-      'xxs': '0.5rem',
-      'xs': '.75rem',
-      'sm': '.875rem',
-      'tiny': '.875rem',
-      'base': '1rem',
-      'lg': '1.125rem',
-      'xl': '1.25rem',
+      xxs: '0.5rem',
+      xs: '.75rem',
+      sm: '.875rem',
+      tiny: '.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
       '2xl': '1.5rem',
       '3xl': '1.75rem',
+      '3.5xl': '2rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
@@ -44,23 +47,23 @@ module.exports = {
       '10xl': '16rem',
     },
     screens: {
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
       '2xl': '1600px',
       '3xl': '2000px',
     },
     maxHeight: {
-      '0': '0',
+      0: '0',
       '1/4': '25%',
       '1/2': '50%',
       '3/4': '75%',
       '3/4vh': '75vh',
       'toc-with-menu': 'calc(100vh - 250px)',
       'toc-no-menu': 'calc(100vh - 180px)',
-      'full': '100%',
-    }
+      full: '100%',
+    },
   },
   spacing: {
     px: '1px',
@@ -85,9 +88,9 @@ module.exports = {
     48: '12rem',
     56: '14rem',
     64: '16rem',
-    72: '23.75rem'
+    72: '23.75rem',
   },
-  height: theme => ({
+  height: (theme) => ({
     ...theme('spacing'),
     auto: 'auto',
     full: '100%',
@@ -97,6 +100,6 @@ module.exports = {
   }),
   variants: {
     borderStyle: ['responsive', 'hover'],
-    borderWidth: ['last']
-  }
+    borderWidth: ['last'],
+  },
 }

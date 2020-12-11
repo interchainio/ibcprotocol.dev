@@ -1,4 +1,5 @@
 export default {
+  ssr: false,
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
@@ -14,10 +15,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-    '~/assets/css/fonts.css',
-    '~/assets/css/main.css',
-  ],
+  css: ['~/assets/css/fonts.css', '~/assets/css/main.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -42,15 +40,16 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    "postcss": {
-      "plugins": {
-        "tailwindcss": {},
-        "autoprefixer": {},
-        "postcss-nested": {},
-        "postcss-preset-env": {
-          "stage": 0
-        }
-      }
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+        'postcss-nested': {},
+        'postcss-preset-env': {
+          stage: 0,
+          'focus-within-pseudo-class': false,
+        },
+      },
     },
   },
 }

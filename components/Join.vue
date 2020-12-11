@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-6xl mt-16">
+  <div class="mx-auto max-w-6xl">
     <h1 class="text-3xl text-center uppercase mb-24">Join the community</h1>
     <div
       class="flex flex-col md:flex-row justify-center mx-auto max-w-5xl px-12"
@@ -8,17 +8,25 @@
         v-for="(c, index) in community"
         :key="index"
         class="w-full md:w-1/3"
-        :class="{ 'pt-16': index === 1, 'pt-32': index === 2 }"
+        :class="{
+          'pt-16 md:pt-16': index === 1,
+          'pt-16 md:pt-32': index === 2,
+        }"
       >
-        <div class="flex border border-white justify-between w-full box-tall">
+        <div
+          class="container relative flex border border-white justify-between w-full box-tall"
+        >
           <div class="p-6">
             <div class="uppercase text-sm mb-8">{{ c.title }}</div>
             <div class="text-xs">{{ c.subtitle }}</div>
           </div>
           <div>
-            <div class="bg-white w-16 h-16 flex justify-center items-center">
+            <a
+              class="bg-white w-16 h-16 flex justify-center items-center"
+              :href="c.link"
+            >
               <img src="~/assets/images/arrow.svg" />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -46,5 +54,33 @@ export default {
 <style scoped>
 .box-tall {
   height: 180px;
+}
+
+/* this CS forms the triangles */
+.container:after,
+.container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* this border color controlls the color of the triangle (what looks like the fill of the triangle) */
+.container:after {
+  left: 43px;
+  bottom: -48px;
+  border-color: #323232 transparent transparent #323232;
+  border-width: 24px;
+}
+
+/* this border color controlls the outside, thin border */
+.container:before {
+  left: 42px;
+  bottom: -50px;
+  border-color: white transparent transparent white;
+  border-width: 25px;
 }
 </style>

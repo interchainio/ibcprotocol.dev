@@ -36,7 +36,7 @@
       </div>
 
       <div class="mx-auto px-12 max-w-6xl relative">
-        <h1 class="text-5xl leading-tight uppercase my-32">
+        <h1 class="text-3xl md:text-5xl leading-tight uppercase my-32">
           <div>The industy standard protocol for</div>
           <div class="inline-block text-gradient">
             Inter&#8209;Blockchain<br />
@@ -55,7 +55,7 @@
         </div>
 
         <img
-          class="absolute right-0 top-0 mt-64"
+          class="absolute right-0 top-0 mt-64 -z-10 opacity-50 md:opacity-100"
           src="~/assets/images/illu-1.svg"
         />
       </div>
@@ -141,7 +141,7 @@ export default {
         },
         {
           title: 'Discuss IBC',
-          subtitile: 'Forum',
+          subtitle: 'Forum',
           link: '#',
         },
         {

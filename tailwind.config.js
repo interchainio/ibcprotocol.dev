@@ -1,6 +1,9 @@
 module.exports = {
   theme: {
     extend: {
+      zIndex: {
+        '-10': '-10',
+      },
       transitionDuration: {
         0: '0ms',
         650: '650ms',

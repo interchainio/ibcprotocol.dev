@@ -15,6 +15,21 @@ p + p {
   @apply mt-3;
 }
 
+svg {
+  tspan {
+    white-space: pre;
+  }
+  .shp0 {
+    fill: #fff1f1;
+  }
+  .shp1 {
+    fill: url(#grd1);
+  }
+  .shp2 {
+    fill: url(#grd2);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     @apply bg-dark text-light;

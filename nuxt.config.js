@@ -27,6 +27,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    '@nuxtjs/tailwindcss',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -42,13 +44,13 @@ export default {
   build: {
     postcss: {
       plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
         'postcss-nested': {},
         'postcss-preset-env': {
           stage: 0,
-          'focus-within-pseudo-class': false,
         },
+      },
+      preset: {
+        autoprefixer: {},
       },
     },
   },

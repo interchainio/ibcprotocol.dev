@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .border-grid-2:nth-of-type(1) {
+      @apply border-r border-b border-l;
+    }
+
+    .border-grid-2:nth-of-type(2) {
+      @apply border-r border-b;
+    }
+
+    .border-grid-2:nth-of-type(3) {
+      @apply border-r border-b border-l;
+    }
+
+    .border-grid-2:nth-of-type(4) {
+      @apply border-r border-b;
+    }
+
+    .border-grid-2:nth-of-type(5) {
+      @apply border-r border-l;
+    }
+
+    .border-grid-2:nth-of-type(6) {
+      @apply border-r;
+    }
+
+    .border-grid-3:nth-of-type(1) {
+      @apply border-r border-b border-l;
+    }
+
+    .border-grid-3:nth-of-type(2),
+    .border-grid-3:nth-of-type(3) {
+      @apply border-r border-b border-l-0;
+    }
+
+    .border-grid-3:nth-of-type(4) {
+      @apply border-r border-l;
+    }
+
+    .border-grid-3:nth-of-type(5),
+    .border-grid-3:nth-of-type(6) {
+      @apply border-r border-l-0;
+    }
+  }
+}

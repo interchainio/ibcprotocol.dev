@@ -1,6 +1,6 @@
 <template>
   <div class="mt-32">
-    <h1 class="text-3xl uppercase mb-4">News</h1>
+    <h1 class="text-lg md:text-3xl uppercase mb-4">News</h1>
     <ul class="flex flex-wrap">
       <li
         v-for="(article, index) in articles"
@@ -13,7 +13,7 @@
             index === 0 || index === 3 ? 'bg-gradientRed' : 'bg-gradientPurple'
           "
         ></div>
-        <h2 class="text-xl mb-4" v-html="article.title" />
+        <h2 class="text-md md:text-xl mb-4" v-html="article.title" />
         <p class="text-base f-serif mb-16" v-html="article.description" />
       </li>
     </ul>

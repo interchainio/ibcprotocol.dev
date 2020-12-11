@@ -12,8 +12,10 @@
     <div
       class="flex flex-col md:flex-row justify-between md:items-end pt-16 lg:pt-8"
     >
-      <LogoFooter class="p-12 w-2/3 md:w-1/3 xl:w-1/2" />
-      <div class="p-12 uppercase text-xs md:text-sm text-right">
+      <LogoFooter class="p-8 md:p-12 w-full sm:w-2/3 md:w-1/3 xl:w-1/2" />
+      <div
+        class="p-8 md:p-12 uppercase text-xxs md:text-sm text-right leading-loose"
+      >
         <div>INTER-BLOCKCHAIN COMMUNICATION</div>
         <div>
           <span class="mr-4">Documentation</span>

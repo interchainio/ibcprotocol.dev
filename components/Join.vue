@@ -1,8 +1,10 @@
 <template>
   <div class="mx-auto max-w-6xl">
-    <h1 class="text-3xl text-center uppercase mb-24">Join the community</h1>
+    <h1 class="text-lg md:text-3xl text-center uppercase mb-24">
+      Join the community
+    </h1>
     <div
-      class="flex flex-col md:flex-row justify-center mx-auto max-w-5xl px-12"
+      class="flex flex-col md:flex-row justify-center mx-auto max-w-5xl px-8 md:px-12"
     >
       <div
         v-for="(c, index) in community"

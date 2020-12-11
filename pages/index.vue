@@ -1,11 +1,11 @@
 <template>
   <div>
     <div>
-      <div class="border-gray border-t px-12">
+      <div class="border-gray border-t px-8 md:px-12">
         <Logo class="mx-auto w-full my-12" />
       </div>
 
-      <div class="border-gray border-t border-b">
+      <div class="border-gray border-t border-b overflow-hidden">
         <div class="uppercase flex items-center justify-between">
           <ul class="flex -mx-2 ml-8">
             <li class="mx-2">Documentation</li>
@@ -35,9 +35,11 @@
         </div>
       </div>
 
-      <div class="mx-auto px-12 max-w-6xl relative">
-        <h1 class="text-3xl md:text-5xl leading-tight uppercase my-32">
-          <div>The industy standard protocol for</div>
+      <div class="mx-auto px-8 md:px-12 max-w-6xl relative">
+        <h1
+          class="text-lg md:text-3xl lg:text-5xl leading-tight uppercase mt-32 mb-16 md:mb-32"
+        >
+          <div>The industy standard<br />protocol for</div>
           <div class="inline-block text-gradient">
             Inter&#8209;Blockchain<br />
             Communication
@@ -45,7 +47,7 @@
         </h1>
 
         <nuxt-content
-          class="f-serif max-w-2xl text-xl leading-relaxed"
+          class="f-serif max-w-2xl text-md md:text-xl leading-relaxed"
           :document="page"
         />
 
@@ -61,15 +63,15 @@
       </div>
     </div>
 
-    <News :articles="news" class="mx-auto px-12 max-w-6xl relative" />
+    <News :articles="news" class="mx-auto px-8 md:px-12 max-w-6xl relative" />
 
-    <div class="mx-auto px-12 max-w-6xl relative mt-16">
+    <div class="mx-auto px-8 md:px-12 max-w-6xl relative mt-16">
       <img src="~/assets/images/illu-2.svg" class="w-full" />
     </div>
 
     <Institutions :institutions="institutions" />
 
-    <div class="mx-auto px-12 max-w-6xl relative py-16">
+    <div class="mx-auto px-8 md:px-12 max-w-6xl relative py-16">
       <img src="~/assets/images/illu-3.svg" class="w-full" />
     </div>
 

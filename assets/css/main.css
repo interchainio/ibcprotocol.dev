@@ -31,12 +31,16 @@ svg {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  body, .nav {
     @apply bg-dark text-light;
   }
 
   .fill {
     fill: #fff1f1;
+  }
+
+  .stroke {
+    stroke: #fff1f1;
   }
 
   .button {
@@ -45,7 +49,7 @@ svg {
 }
 
 @media (prefers-color-scheme: light) {
-  body {
+  body, .nav {
     @apply bg-light text-dark;
   }
 
@@ -53,7 +57,12 @@ svg {
     fill: #323232;
   }
 
+  .stroke {
+    stroke: #323232;
+  }
+
   .button {
     @apply bg-dark text-light;
   }
+
 }

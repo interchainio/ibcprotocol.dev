@@ -5,7 +5,7 @@
     </div>
 
     <div
-      class="border-gray border-t border-b overflow-hidden sticky top-0 bg-dark z-40"
+      class="nav border-gray border-t border-b overflow-hidden sticky top-0 z-40"
     >
       <div class="uppercase flex items-center justify-between">
         <ul class="flex -mx-2 ml-8 py-2">
@@ -21,10 +21,10 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="8" cy="8" r="7.5" stroke="#FFF1F1" />
+            <circle cx="8" cy="8" r="7.5" class="stroke" />
             <path
               d="M15.5 8C15.5 11.9741 12.409 15.2263 8.5 15.4836V0.516402C12.409 0.773695 15.5 4.02588 15.5 8Z"
-              fill="#FFF1F1"
+              class="fill stroke"
               stroke="#FFF1F1"
             />
           </svg>

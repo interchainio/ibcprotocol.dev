@@ -9,7 +9,7 @@
       <div
         v-for="(c, index) in community"
         :key="index"
-        class="w-full md:w-1/3"
+        class="w-full md:w-1/3 speech-bubble"
         :class="{
           'pt-16 md:pt-16': index === 1,
           'pt-16 md:pt-32': index === 2,
@@ -56,6 +56,12 @@ export default {
 <style scoped>
 .box-tall {
   height: 180px;
+}
+
+.speech-bubble {
+  &:not(:first-child) {
+    margin-left: -1px;
+  }
 }
 
 /* this CS forms the triangles */

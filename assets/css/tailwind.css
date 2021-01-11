@@ -4,6 +4,7 @@
 
 @layer utilities {
   @variants responsive {
+
     .border-grid-2:nth-of-type(1) {
       @apply border-r border-b border-l;
     }
@@ -39,6 +40,7 @@
 
     .border-grid-3:nth-of-type(4) {
       @apply border-r border-l;
+      border-bottom: none;
     }
 
     .border-grid-3:nth-of-type(5),

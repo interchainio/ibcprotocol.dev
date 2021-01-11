@@ -8,11 +8,9 @@
       class="border-gray border-t border-b overflow-hidden sticky top-0 bg-dark z-40"
     >
       <div class="uppercase flex items-center justify-between">
-        <ul class="flex -mx-2 ml-8">
+        <ul class="flex -mx-2 ml-8 py-2">
           <li class="mx-2">Documentation</li>
           <li class="mx-2">FAQ</li>
-          <li class="mx-2">Forum</li>
-          <li class="mx-2">Discord</li>
         </ul>
         <div class="flex items-center">
           <svg
@@ -30,8 +28,6 @@
               stroke="#FFF1F1"
             />
           </svg>
-          <div class="border-l border-gray px-8 py-2">EN</div>
-          <div class="border-l border-gray px-8 py-2">Search</div>
         </div>
       </div>
     </div>

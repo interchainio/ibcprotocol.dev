@@ -5,7 +5,7 @@
         IBC is developed by a<br />diverse group of institutions
       </h1>
     </div>
-    <div class="border-t border-gray">
+    <div class="border-t border-b border-gray">
       <ul class="mx-auto max-w-6xl flex flex-wrap">
         <li
           v-for="(institution, index) in institutions"
@@ -21,18 +21,11 @@
         </li>
       </ul>
     </div>
-    <div class="border-t border-b border-gray">
-      <Ticker :text="tickerText" :duration="tickerDuration" />
-    </div>
   </div>
 </template>
 
 <script>
-import Ticker from '~/components/Ticker'
-
 export default {
-  components: { Ticker },
-
   props: {
     institutions: {
       type: Array,

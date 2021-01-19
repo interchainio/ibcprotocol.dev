@@ -2,10 +2,10 @@
   <div>
     <div class="mx-auto w-full flex justify-center">
       <div
-        class="flex justify-center items-center overflow-visible w-0 h-0 rotated"
+        class="flex justify-center items-center overflow-visible w-0 h-0 flipped"
       >
         <div class="w-screen border-t border-b border-gray">
-          <Ticker :text="tickerText" :duration="tickerDuration" />
+          <Ticker />
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style scoped>
-.rotated {
-  transform: rotate(-174.65deg);
+.flipped {
+  transform: rotate(-180deg);
 }
 </style>

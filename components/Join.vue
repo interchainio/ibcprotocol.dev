@@ -1,10 +1,10 @@
 <template>
-  <div class="mx-auto max-w-6xl">
+  <div class="mx-auto max-w-7xl">
     <h1 class="text-lg md:text-3xl text-center uppercase mb-24">
       Join the community
     </h1>
     <div
-      class="flex flex-col md:flex-row justify-center mx-auto max-w-5xl px-8 md:px-12"
+      class="flex flex-col md:flex-row justify-center mx-auto max-w-7xl px-8 md:px-12"
     >
       <div
         v-for="(c, index) in community"
@@ -19,8 +19,8 @@
           class="container relative flex border border-gray justify-between w-full box-tall"
         >
           <div class="p-6">
-            <div class="uppercase text-sm mb-8">{{ c.title }}</div>
-            <div class="text-xs">{{ c.subtitle }}</div>
+            <div class="uppercase leading-tight mb-8">{{ c.title }}</div>
+            <div class="text-sm">{{ c.subtitle }}</div>
           </div>
           <div>
             <a
@@ -94,7 +94,7 @@ export default {
   @apply bg-white;
 }
 
-@media (prefers-color-scheme: light) {
+#app {
   .box-link {
     @apply bg-dark;
   }

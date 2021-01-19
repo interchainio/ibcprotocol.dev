@@ -1,15 +1,13 @@
 <template>
   <div class="marquee text-xs flex">
-    <div class="marquee__iner">
-      <marquee-text :duration="duration">
-        <span
-          v-for="n in 100"
-          :key="n"
-          class="uppercase flex-grow whitespace-nowrap mr-1"
-          >{{ text }}</span
-        >
-      </marquee-text>
-    </div>
+    <marquee-text :duration="tickerDuration">
+      <span
+        v-for="n in 100"
+        :key="n"
+        class="marquee-item uppercase flex-grow whitespace-nowrap"
+        >{{ tickerText }}</span
+      >
+    </marquee-text>
   </div>
 </template>
 
@@ -24,11 +22,20 @@ export default {
   props: {
     text: {
       type: String,
-      default: ' ',
+      default: '',
     },
     duration: {
       type: Number,
       default: 1000,
+    },
+  },
+  computed: {
+    tickerText() {
+      return this.props?.text || this.$store.state.meta.ticker.text
+    },
+
+    tickerDuration() {
+      return this.props?.duration || this.$store.state.meta.ticker.duration
     },
   },
 }
@@ -43,13 +50,8 @@ export default {
   --move-final: calc(-50% + var(--offset));
 }
 
-.marquee__inner {
-  width: fit-content;
-  display: flex;
-  position: relative;
-  transform: translate3d(var(--move-initial), 0, 0);
-  animation: marquee 5s linear infinite;
-  animation-play-state: running;
+.marquee-item {
+  margin-right: 7px;
 }
 
 @keyframes marquee {

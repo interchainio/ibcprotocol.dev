@@ -1,5 +1,5 @@
 ---
 ticker:
   text: Inter-Blockchain Communication
-  duration: 1000
+  duration: 2000
 ---

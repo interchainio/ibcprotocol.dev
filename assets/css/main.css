@@ -1,9 +1,9 @@
 body {
-  font-family: 'GTA-Exp', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'CMU Serif Upright Italic', 'Helvetica', 'Arial', sans-serif;
 }
 
 .f-serif {
-  font-family: 'PT', 'Times New Roman', serif;
+  font-family: 'CMU Serif', 'Helvetica', 'Times New Roman', serif;
 }
 
 .button {
@@ -30,8 +30,31 @@ svg {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body, .nav {
+#app {
+  @apply bg-light text-dark;
+  min-height: 100vh;
+
+  .nav {
+    @apply bg-light text-dark;
+  }
+
+  .fill {
+    fill: #323232;
+  }
+
+  .stroke {
+    stroke: #323232;
+  }
+
+  .button {
+    @apply bg-dark text-light;
+  }
+}
+
+#app.darkmode {
+  @apply bg-dark text-light;
+
+  .nav {
     @apply bg-dark text-light;
   }
 
@@ -48,21 +71,17 @@ svg {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  body, .nav {
-    @apply bg-light text-dark;
-  }
+.nuxt-link-exact-active {
+  @apply text-red;
+}
 
-  .fill {
-    fill: #323232;
-  }
-
-  .stroke {
-    stroke: #323232;
-  }
-
-  .button {
-    @apply bg-dark text-light;
-  }
-
+.text-gradient {
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgb(103, 115, 226),
+    rgb(228, 106, 86)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

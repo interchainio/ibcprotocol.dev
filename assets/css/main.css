@@ -1,9 +1,9 @@
 body {
-  font-family: 'CMU Serif Upright Italic', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'CMU-UI', 'Helvetica', 'Arial', sans-serif;
 }
 
 .f-serif {
-  font-family: 'CMU Serif', 'Helvetica', 'Times New Roman', serif;
+  font-family: 'CMU-Serif', 'Helvetica', 'Times New Roman', serif;
 }
 
 .button {
@@ -87,13 +87,29 @@ svg {
 }
 
 .heading {
-  @apply text-lg leading-tight uppercase mt-32 mb-16;
+  @apply text-lg leading-tight uppercase mt-32;
 
   @screen md {
-    @apply text-3xl mb-32;
+    @apply text-3xl;
   }
 
   @screen lg {
     @apply text-5xl;
   }
+}
+
+.heading-sm {
+  @apply text-lg leading-tight uppercase mt-32;
+
+  @screen md {
+    @apply text-xl;
+  }
+
+  @screen lg {
+    @apply text-2xl;
+  }
+}
+
+.badge {
+  @apply text-xs uppercase px-3 py-1 rounded-md;
 }

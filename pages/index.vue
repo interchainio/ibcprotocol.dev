@@ -2,7 +2,7 @@
   <div>
     <div>
       <div class="mx-auto px-8 md:px-12 max-w-6xl relative">
-        <h1 class="heading">
+        <h1 class="heading mb-16 mb:mb-32">
           <div>The industy standard<br />protocol for</div>
           <div class="inline-block text-gradient">
             Inter&#8209;Blockchain<br />
@@ -17,7 +17,11 @@
 
         <div class="my-16 flex flex-col md:flex-row">
           <div><a class="button">Learn More</a></div>
-          <div><a class="button mt-6 md:mt-0 md:ml-6">Documentation</a></div>
+          <div>
+            <NuxtLink to="/documentation" class="button mt-6 md:mt-0 md:ml-6"
+              >Documentation</NuxtLink
+            >
+          </div>
         </div>
 
         <img
@@ -42,10 +46,6 @@
     <div class="mx-auto max-w-6xl relative">
       <Join :community="community" />
     </div>
-
-    <div class="mt-48">
-      <Footer />
-    </div>
   </div>
 </template>
 
@@ -53,10 +53,9 @@
 import News from '~/components/News'
 import Institutions from '~/components/Institutions'
 import Join from '~/components/Join'
-import Footer from '~/components/Footer'
 
 export default {
-  components: { News, Institutions, Join, Footer },
+  components: { News, Institutions, Join },
 
   async asyncData({ $content }) {
     const page = await $content('index/intro').fetch()

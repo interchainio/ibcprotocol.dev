@@ -6,33 +6,33 @@
     </div>
     <Nav />
     <Nuxt />
+    <div class="mt-48">
+      <Footer />
+    </div>
   </div>
 </template>
 
 <script>
 import Nav from '~/components/Nav'
 import Ticker from '~/components/Ticker'
+import Footer from '~/components/Footer'
 
 export default {
-  components: { Nav, Ticker },
-
   name: 'Default',
-
+  components: { Nav, Ticker, Footer },
   data() {
     return {
       darkMode: window.matchMedia('(prefers-color-scheme: dark)'),
     }
   },
-
-  async mounted() {
-    const meta = await this.$content('meta').fetch()
-    this.$store.commit('setMeta', meta)
-  },
-
   computed: {
     isHome() {
       return this.$route.path === '/'
     },
+  },
+  async mounted() {
+    const meta = await this.$content('meta').fetch()
+    this.$store.commit('setMeta', meta)
   },
 }
 </script>

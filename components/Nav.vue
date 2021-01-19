@@ -4,10 +4,8 @@
   >
     <div class="uppercase flex items-center justify-between">
       <ul class="flex -mx-2 items-center">
-        <li class="px-6 py-3 border-r flex items-center">
-          <NuxtLink to="/"
-            ><img src="~/assets/images/logo-small.svg" class="w-full"
-          /></NuxtLink>
+        <li class="px-8 py-3 border-r flex items-center">
+          <NuxtLink to="/" class="font-bold text-white">IBC</NuxtLink>
         </li>
         <li class="mx-2 py-2">
           <NuxtLink to="/documentation" class="mx-2">Documentation</NuxtLink>

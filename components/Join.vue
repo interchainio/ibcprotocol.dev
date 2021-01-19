@@ -20,7 +20,7 @@
         >
           <div class="p-6">
             <div class="uppercase leading-tight mb-8">{{ c.title }}</div>
-            <div class="text-sm">{{ c.subtitle }}</div>
+            <div>{{ c.subtitle }}</div>
           </div>
           <div>
             <a
@@ -110,6 +110,16 @@ export default {
 
   .container:before {
     border-color: #323232 transparent transparent #323232;
+  }
+
+  &.darkmode {
+    .container:after {
+      border-color: #fff1f1 transparent transparent #fff1f1;
+    }
+
+    .container:before {
+      border-color: #323232 transparent transparent #323232;
+    }
   }
 }
 </style>

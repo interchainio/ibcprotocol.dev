@@ -10,8 +10,9 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const data = await $content('documentation/resources').fetch()
-    return { resources: data.resources }
+    const resources = await $content('documentation/resources').fetch()
+
+    return { resources }
   },
 }
 </script>

@@ -19,7 +19,6 @@
 export default {
   async asyncData({ $content }) {
     const resources = await $content('documentation/resources').fetch()
-    console.log(resources)
 
     return { resources }
   },

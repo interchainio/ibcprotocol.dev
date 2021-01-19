@@ -2,9 +2,7 @@
   <div>
     <div>
       <div class="mx-auto px-8 md:px-12 max-w-6xl relative">
-        <h1
-          class="text-lg md:text-3xl lg:text-5xl leading-tight uppercase mt-32 mb-16 md:mb-32"
-        >
+        <h1 class="heading">
           <div>The industy standard<br />protocol for</div>
           <div class="inline-block text-gradient">
             Inter&#8209;Blockchain<br />

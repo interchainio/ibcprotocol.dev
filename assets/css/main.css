@@ -85,3 +85,15 @@ svg {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.heading {
+  @apply text-lg leading-tight uppercase mt-32 mb-16;
+
+  @screen md {
+    @apply text-3xl mb-32;
+  }
+
+  @screen lg {
+    @apply text-5xl;
+  }
+}

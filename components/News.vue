@@ -7,12 +7,7 @@
         :key="index"
         class="w-full md:w-1/2 pr-0 md:pr-16"
       >
-        <div
-          class="title-line mb-4"
-          :class="
-            index === 0 || index === 3 ? 'bg-gradientRed' : 'bg-gradientPurple'
-          "
-        ></div>
+        <Title-Line :index="index" />
         <h2 class="text-md md:text-xl mb-4" v-html="article.title" />
         <p class="text-base f-serif mb-16" v-html="article.description" />
       </li>
@@ -21,7 +16,9 @@
 </template>
 
 <script>
+import TitleLine from '~/components/TitleLine'
 export default {
+  components: { TitleLine },
   props: {
     articles: {
       type: Array,
@@ -30,13 +27,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.title-line {
-  width: 90px;
-  height: 1px;
-}
-
-.red {
-}
-</style>

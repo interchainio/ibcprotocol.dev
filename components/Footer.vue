@@ -18,7 +18,7 @@
       >
         <div>INTER-BLOCKCHAIN COMMUNICATION</div>
         <div>
-          <span class="mr-2"
+          <span class="mx-2"
             ><NuxtLink to="/documentation">Documentation</NuxtLink></span
           >
           <span class="mr-2"><NuxtLink to="/faq">faq</NuxtLink></span>

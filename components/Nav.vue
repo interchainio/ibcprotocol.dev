@@ -7,11 +7,11 @@
         <li class="px-8 py-3 border-r flex items-center">
           <NuxtLink to="/" class="font-bold">IBC</NuxtLink>
         </li>
-        <li class="mx-2 py-2">
-          <NuxtLink to="/documentation" class="mx-2">Documentation</NuxtLink>
+        <li class="mx-8 py-2">
+          <NuxtLink to="/documentation">Documentation</NuxtLink>
         </li>
-        <li class="mx-2 py-2">
-          <NuxtLink to="/faq" class="mx-2">FAQ</NuxtLink>
+        <li class="py-2">
+          <NuxtLink to="/faq">FAQ</NuxtLink>
         </li>
       </ul>
       <div class="flex items-center">

@@ -10,7 +10,7 @@
           class="w-full md:w-1/2 pr-0 md:pr-16"
         >
           <Title-Line :index="index" />
-          <h2 class="text-2xl mb-3">{{ resource.title }}</h2>
+          <h2 class="text-xl mb-4">{{ resource.title }}</h2>
           <p class="f-serif">{{ resource.description }}</p>
           <span class="inline-block text-xs mt-4 bg-light text-dark badge">
             {{ resource.filetype }} {{ resource.filesize }}
@@ -56,7 +56,7 @@
           class="w-full md:w-1/2 pr-0 md:pr-16"
         >
           <Title-Line :index="index" />
-          <h2 class="text-2xl mb-3">{{ item.title }}</h2>
+          <h2 class="text-xl mb-4">{{ item.title }}</h2>
           <p class="f-serif">{{ item.description }}</p>
           <span class="inline-block text-xs mt-4 bg-light text-dark badge">
             {{ item.filetype }} {{ item.filesize }}

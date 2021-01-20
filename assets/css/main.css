@@ -79,7 +79,11 @@ svg {
   }
 }
 
-.nuxt-link-exact-active {
+.nuxt-link-exact-active:not(.nocolor) {
+  @apply text-red;
+}
+
+a:hover {
   @apply text-red;
 }
 

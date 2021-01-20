@@ -8,7 +8,10 @@
         class="w-full md:w-1/2 pr-0 md:pr-16"
       >
         <Title-Line :index="index" />
-        <h2 class="text-md md:text-xl mb-4" v-html="article.title" />
+        <h2
+          class="text-md leading-tight md:text-xl mb-4"
+          v-html="article.title"
+        />
         <p class="text-base f-serif mb-16" v-html="article.description" />
       </li>
     </ul>

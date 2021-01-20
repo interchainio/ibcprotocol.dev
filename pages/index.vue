@@ -16,7 +16,11 @@
         />
 
         <div class="my-16 flex flex-col md:flex-row">
-          <div><a class="button">Learn More</a></div>
+          <div>
+            <NuxtLink class="button mt-6 md:mt-0" to="/faq"
+              >Learn More</NuxtLink
+            >
+          </div>
           <div>
             <NuxtLink to="/documentation" class="button mt-6 md:mt-0 md:ml-6"
               >Documentation</NuxtLink

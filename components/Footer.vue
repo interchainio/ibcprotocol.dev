@@ -18,10 +18,17 @@
       >
         <div>INTER-BLOCKCHAIN COMMUNICATION</div>
         <div>
-          <span class="mr-4">Documentation</span>
-          <span class="mr-4">faq</span>
-          <span class="mr-4">forum</span>
-          <span>discord</span>
+          <span class="mr-2"
+            ><NuxtLink to="/documentation">Documentation</NuxtLink></span
+          >
+          <span class="mr-2"><NuxtLink to="/faq">faq</NuxtLink></span>
+          <span class="mr-2"
+            ><a
+              href="https://forum.cosmos.network/t/welcome-to-cosmos-forum-read-this-to-get-started/29"
+              >forum</a
+            ></span
+          >
+          <span><a href="https://discord.gg/vcExX9T">discord</a></span>
         </div>
       </div>
     </div>

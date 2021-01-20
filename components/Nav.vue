@@ -5,12 +5,14 @@
     <div class="uppercase flex items-center justify-between">
       <ul class="flex -mx-2 items-center">
         <li class="px-8 py-3 border-r flex items-center">
-          <NuxtLink to="/" class="font-bold text-white">IBC</NuxtLink>
+          <NuxtLink to="/" class="font-bold text-light:important">IBC</NuxtLink>
         </li>
         <li class="mx-2 py-2">
           <NuxtLink to="/documentation" class="mx-2">Documentation</NuxtLink>
         </li>
-        <li class="mx-2 py-2">FAQ</li>
+        <li class="mx-2 py-2">
+          <NuxtLink to="/faq" class="mx-2">FAQ</NuxtLink>
+        </li>
       </ul>
       <div class="flex items-center">
         <svg
@@ -20,7 +22,7 @@
           viewBox="0 0 16 16"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          @click="darkMode = !darkMode"
+          @click="$nuxt.$emit('toggle-dark-mode')"
         >
           <circle cx="8" cy="8" r="7.5" class="stroke" />
           <path

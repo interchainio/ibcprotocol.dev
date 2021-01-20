@@ -19,8 +19,10 @@
           class="container relative flex border border-gray justify-between w-full box-tall"
         >
           <div class="p-6">
-            <div class="uppercase leading-tight mb-8">{{ c.title }}</div>
-            <div>{{ c.subtitle }}</div>
+            <div class="uppercase leading-tight mb-8 text-xl">
+              {{ c.title }}
+            </div>
+            <div class="f-serif">{{ c.subtitle }}</div>
           </div>
           <div>
             <a

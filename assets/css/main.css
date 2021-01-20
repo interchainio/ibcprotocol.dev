@@ -46,6 +46,10 @@ svg {
     stroke: #323232;
   }
 
+  .border-theme {
+    border-color: #323232;
+  }
+
   .button {
     @apply bg-dark text-light;
   }
@@ -64,6 +68,10 @@ svg {
 
   .stroke {
     stroke: #fff1f1;
+  }
+
+  .border-theme {
+    border-color: #fff1f1;
   }
 
   .button {

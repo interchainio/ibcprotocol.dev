@@ -3,7 +3,7 @@
     class="nav border-gray border-t border-b overflow-hidden sticky top-0 z-40"
   >
     <div class="uppercase flex items-center justify-between">
-      <ul class="flex -mx-2 items-center">
+      <ul class="flex items-center">
         <li class="px-8 py-3 border-r flex items-center">
           <NuxtLink to="/" class="font-bold">IBC</NuxtLink>
         </li>

@@ -12,7 +12,7 @@
           <Title-Line :index="index" />
           <h2 class="text-xl mb-4">{{ resource.title }}</h2>
           <p class="f-serif">{{ resource.description }}</p>
-          <span class="inline-block text-xs mt-4 bg-light text-dark badge">
+          <span class="inline-block text-xs mt-4 badge">
             {{ resource.filetype }} {{ resource.filesize }}
           </span>
         </div>
@@ -40,7 +40,7 @@
           :key="index"
           class="w-full flex items-center -mx-3 py-3 border-t border-theme border-opacity-20 f-serif"
         >
-          <span class="mx-3 badge bg-yellow text-dark">{{ item.status }}</span>
+          <span class="mx-3 badge bg-yellow">{{ item.status }}</span>
           <span class="mx-3">{{ item.framework }}</span>
           <span class="mx-3">{{ item.language }}</span>
           <span class="mx-3">{{ item['supported-light-clients'] }}</span>

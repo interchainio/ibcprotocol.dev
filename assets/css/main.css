@@ -59,6 +59,10 @@ svg {
       filter: drop-shadow(1px 1px 6px rgb(103, 115, 226));
     }
   }
+
+  .badge {
+    @apply text-light bg-dark;
+  }
 }
 
 #app.darkmode {
@@ -88,6 +92,10 @@ svg {
     &:hover {
       filter: drop-shadow(1px 1px 6px rgb(228, 106, 86));
     }
+  }
+
+  .badge {
+    @apply text-dark bg-light;
   }
 }
 
@@ -136,4 +144,8 @@ a:hover {
 
 .badge {
   @apply text-xs uppercase px-3 py-1 rounded-md;
+
+  &.bg-yellow {
+    @apply text-dark bg-yellow !important;
+  }
 }

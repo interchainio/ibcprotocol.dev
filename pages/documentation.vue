@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-6xl mx-auto">
+  <div class="max-w-6xl mx-4 lg:mx-auto">
     <img class="ml-auto" src="~/assets/images/illu-4.svg" />
     <div class="-mt-32">
       <h1 class="heading-sm mb-6">Resources</h1>
@@ -23,7 +23,7 @@
         <div
           v-for="(item, index) in page.ibcImplementations"
           :key="index"
-          class="w-full flex items-center -mx-3 py-3 border-t border-theme border-opacity-20 f-serif"
+          class="w-full flex items-center py-3 border-t border-theme border-opacity-20 f-serif"
         >
           <span class="mx-3 badge bg-yellow text-dark">{{ item.status }}</span>
           <span class="mx-3">{{ item.framework }}</span>
@@ -38,7 +38,7 @@
         <div
           v-for="(item, index) in page.relayerImplementations"
           :key="index"
-          class="w-full flex items-center -mx-3 py-3 border-t border-theme border-opacity-20 f-serif"
+          class="w-full flex items-center py-3 border-t border-theme border-opacity-20 f-serif"
         >
           <span class="mx-3 badge bg-yellow">{{ item.status }}</span>
           <span class="mx-3">{{ item.framework }}</span>

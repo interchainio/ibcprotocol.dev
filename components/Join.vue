@@ -116,11 +116,11 @@ export default {
 
   &.darkmode {
     .container:after {
-      border-color: #fff1f1 transparent transparent #fff1f1;
+      border-color: #323232 transparent transparent #323232;
     }
 
     .container:before {
-      border-color: #323232 transparent transparent #323232;
+      border-color: #fff1f1 transparent transparent #fff1f1;
     }
   }
 }

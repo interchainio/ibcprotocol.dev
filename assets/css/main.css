@@ -52,6 +52,12 @@ svg {
 
   .button {
     @apply bg-dark text-light;
+
+    transition: filter 0.5s ease-out;
+
+    &:hover {
+      filter: drop-shadow(1px 1px 6px rgb(103, 115, 226));
+    }
   }
 }
 
@@ -76,6 +82,12 @@ svg {
 
   .button {
     @apply bg-light text-dark;
+
+    transition: filter 0.5s ease-out;
+
+    &:hover {
+      filter: drop-shadow(1px 1px 6px rgb(228, 106, 86));
+    }
   }
 }
 

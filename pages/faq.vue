@@ -24,7 +24,7 @@ import TitleLine from '~/components/TitleLine'
 export default {
   components: { TitleLine },
   async asyncData({ $content }) {
-    const items = await $content('faq').fetch()
+    const items = await $content('faq').sortBy('order').fetch()
 
     return { items }
   },

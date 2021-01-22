@@ -66,32 +66,6 @@ export default {
   }
 }
 
-/* this CS forms the triangles */
-.container:after,
-.container:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 100%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.container:after {
-  left: 43px;
-  bottom: -48px;
-  border-color: #323232 transparent transparent #323232;
-  border-width: 24px;
-}
-
-.container:before {
-  left: 42px;
-  bottom: -50px;
-  border-color: #fff1f1 transparent transparent #fff1f1;
-  border-width: 25px;
-}
-
 .box-link {
   @apply bg-white;
 }

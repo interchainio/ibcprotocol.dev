@@ -1,10 +1,10 @@
 <template>
   <div id="app" :class="{ darkmode: darkMode }">
     <Ticker />
-    <div v-if="isHome" class="border-gray border-t px-8 md:px-12">
-      <Logo class="mx-auto w-full my-12" />
-    </div>
     <Nav />
+    <div v-if="isHome" class="border-gray px-8 md:px-12">
+      <Logo class="w-full my-12" />
+    </div>
     <Nuxt />
     <div class="mt-48">
       <Footer />

@@ -3,6 +3,7 @@
     class="nav border-gray border-t border-b overflow-hidden sticky top-0 z-40"
   >
     <div class="uppercase flex items-center justify-between">
+<<<<<<< Updated upstream
       <ul class="flex -mx-2 items-center">
         <li class="px-8 py-3 border-r flex items-center">
           <NuxtLink to="/" class="font-bold text-light:important">IBC</NuxtLink>
@@ -12,6 +13,17 @@
         </li>
         <li class="mx-2 py-2">
           <NuxtLink to="/faq" class="mx-2">FAQ</NuxtLink>
+=======
+      <ul class="flex items-center">
+        <li class="px-10 py-4 border-r flex items-center">
+          <NuxtLink to="/" class="font-bold">IBC</NuxtLink>
+        </li>
+        <li class="mx-8 py-4">
+          <NuxtLink to="/documentation">Documentation</NuxtLink>
+        </li>
+        <li class="py-4">
+          <NuxtLink to="/faq">FAQ</NuxtLink>
+>>>>>>> Stashed changes
         </li>
       </ul>
       <div class="flex items-center">

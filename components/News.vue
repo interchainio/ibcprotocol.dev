@@ -9,7 +9,7 @@
       >
         <Title-Line :index="index" />
         <h2
-          class="text-md leading-tight md:text-xl mb-4"
+          class="text-md md:text-2xl leading-tight mb-4"
           v-html="article.title"
         />
         <p class="text-base f-serif mb-16" v-html="article.description" />

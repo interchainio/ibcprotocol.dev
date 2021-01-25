@@ -1,20 +1,22 @@
 <template>
-  <div class="max-w-6xl mx-4 lg:mx-auto">
+  <div class="max-w-6xl mx-auto px-4 md:px-8">
     <img class="ml-auto" src="~/assets/images/illu-4.svg" />
-    <div class="-mt-32">
+    <div class="-mt-16 md:-mt-32">
       <h1 class="heading-sm mb-6">Resources</h1>
       <div class="flex flex-wrap">
         <div
-          v-for="(resource, index) in page.resources"
-          :key="resource.slug"
-          class="w-full md:w-1/2 pr-0 md:pr-16"
+          v-for="(item, index) in page.resources"
+          :key="item.slug"
+          class="w-full md:w-1/2 pr-0 md:pr-16 mb-12 md:mb-0"
         >
           <Title-Line :index="index" />
-          <h2 class="text-xl mb-4">{{ resource.title }}</h2>
-          <p class="f-serif">{{ resource.description }}</p>
-          <span class="inline-block text-xs mt-4 badge">
-            {{ resource.filetype }} {{ resource.filesize }}
-          </span>
+          <h2 class="text-lg md:text-2xl mb-3">{{ item.title }}</h2>
+          <p class="f-serif">{{ item.description }}</p>
+          <a :href="item.link"
+            ><span class="badge text-base inline-block mt-6 bg-light text-dark">
+              {{ item.button }}
+            </span></a
+          >
         </div>
       </div>
 
@@ -23,13 +25,15 @@
         <div
           v-for="(item, index) in page.ibcImplementations"
           :key="index"
-          class="w-full flex items-center py-3 border-t border-theme border-opacity-20 f-serif"
+          class="w-full flex flex-col md:flex-row justify-start items-center py-3 border-t border-theme border-opacity-20 f-serif"
         >
-          <span class="mx-3 badge bg-yellow text-dark">{{ item.status }}</span>
-          <span class="mx-3">{{ item.framework }}</span>
-          <span class="mx-3">{{ item.language }}</span>
-          <span class="mx-3">{{ item['supported-light-clients'] }}</span>
-          <span class="mx-3">{{ item.implementer }}</span>
+          <div class="mx-3 badge bg-yellow text-dark">{{ item.status }}</div>
+          <div class="block mx-3">
+            {{ item.framework }}
+          </div>
+          <div class="block mx-3">{{ item.language }}</div>
+          <div class="block mx-3">{{ item['supported-light-clients'] }}</div>
+          <div class="block mx-3">{{ item.implementer }}</div>
         </div>
       </div>
 
@@ -53,14 +57,18 @@
         <div
           v-for="(item, index) in page.guides"
           :key="item.slug"
-          class="w-full md:w-1/2 pr-0 md:pr-16"
+          class="w-full md:w-1/2 pr-0 md:pr-16 mb-12 md:mb-0"
         >
           <Title-Line :index="index" />
           <h2 class="text-xl mb-4">{{ item.title }}</h2>
           <p class="f-serif">{{ item.description }}</p>
-          <span class="inline-block text-xs mt-4 bg-light text-dark badge">
-            {{ item.filetype }} {{ item.filesize }}
-          </span>
+          <a :href="item.link" target="_blank"
+            ><span
+              class="inline-block text-xs mt-6 bg-light text-dark badge text-base"
+            >
+              {{ item.button }}
+            </span></a
+          >
         </div>
       </div>
     </div>

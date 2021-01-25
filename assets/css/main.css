@@ -1,3 +1,5 @@
+@import './transitions';
+
 body {
   font-family: 'CMU-UI', 'Helvetica', 'Arial', sans-serif;
 }
@@ -38,12 +40,20 @@ svg {
     @apply bg-light text-dark;
   }
 
-  .fill {
+  .fill, svg.fill {
     fill: #323232;
   }
 
   .stroke {
     stroke: #323232;
+  }
+
+  .stroke-contrast {
+    stroke: #fff1f1;
+  }
+
+  .bg-theme {
+    @apply bg-light;
   }
 
   .border-theme {
@@ -72,12 +82,20 @@ svg {
     @apply bg-dark text-light;
   }
 
-  .fill {
+  .bg-theme {
+    @apply bg-dark;
+  }
+
+  .fill, svg.fill {
     fill: #fff1f1;
   }
 
   .stroke {
     stroke: #fff1f1;
+  }
+
+  .stroke-contrast {
+    stroke: #323232;
   }
 
   .border-theme {
@@ -119,7 +137,11 @@ a:hover {
 }
 
 .heading {
-  @apply text-lg leading-tight uppercase mt-32;
+  @apply text-2xl leading-tight uppercase;
+
+  @screen sm {
+    @apply leading-normal;
+  }
 
   @screen md {
     @apply text-3xl;
@@ -131,10 +153,10 @@ a:hover {
 }
 
 .heading-sm {
-  @apply text-lg leading-tight uppercase mt-32;
+  @apply text-lg leading-tight uppercase mt-16;
 
   @screen md {
-    @apply text-xl;
+    @apply text-xl mt-32;
   }
 
   @screen lg {
@@ -147,5 +169,9 @@ a:hover {
 
   &.bg-yellow {
     @apply text-dark bg-yellow !important;
+  }
+  
+  &.text-base {
+    @apply text-base;
   }
 }

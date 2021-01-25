@@ -1,19 +1,20 @@
 <template>
   <div class="mt-16">
-    <div class="mx-auto px-8 md:px-12 max-w-6xl">
+    <div class="mx-auto px-8 md:px-12 text-center leading-tight">
       <h1 class="text-lg md:text-3xl uppercase mb-8">
-        IBC is developed by a<br />diverse group of institutions
+        IBC is developed by a diverse group of institutions
       </h1>
     </div>
-    <div class="border-t border-b border-gray">
-      <ul class="mx-auto max-w-6xl flex flex-wrap">
+    <div class="border-t border-gray">
+      <ul class="mx-auto flex flex-wrap">
         <li
           v-for="(institution, index) in institutions"
           :key="index"
-          class="box-tall w-1/2 md:w-1/3 border-grid-2 md:border-grid-3 border-gray flex justify-center items-center"
+          class="institution w-1/2 md:w-1/3 flex justify-center items-center"
+          :class="{ 'institution-borders': hasBorders(index) }"
         >
           <a
-            class="text-lg md:text-2xl f-serif w-full h-full flex justify-center items-center text-center p-4"
+            class="text-lg md:text-2xl w-full h-full flex justify-center items-center text-center p-4"
             target="_blank"
             :href="institution.link"
             >{{ institution.name }}</a
@@ -46,11 +47,33 @@ export default {
       return this.$store.state.meta.ticker.duration
     },
   },
+
+  methods: {
+    hasBorders(index) {
+      return (Math.floor(index / 3) + index) % 2 !== 0
+    },
+  },
 }
 </script>
 
 <style scoped>
-.box-tall {
+.institution {
+  @apply border-b;
   height: 220px;
+
+  &:nth-child(2n) {
+    @apply border-l;
+  }
+
+  @screen md {
+    border-left: none;
+  }
+
+  &.institution-borders {
+    @screen md {
+      border-left: 1px solid !important;
+      border-right: 1px solid !important;
+    }
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-6xl mx-auto">
+  <div class="max-w-6xl mx-auto px-4 md:px-8">
     <img class="ml-auto mt-12" src="~/assets/images/illu-5.svg" />
     <div class="-mt-24 max-w-xl mx-6 lg:mx-0">
       <div v-for="(item, idx) in items" :key="idx">

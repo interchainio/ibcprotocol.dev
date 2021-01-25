@@ -25,13 +25,15 @@
         <div
           v-for="(item, index) in page.ibcImplementations"
           :key="index"
-          class="w-full flex items-center py-3 border-t border-theme border-opacity-20 f-serif"
+          class="w-full flex flex-col md:flex-row justify-start items-center py-3 border-t border-theme border-opacity-20 f-serif"
         >
-          <span class="mx-3 badge bg-yellow text-dark">{{ item.status }}</span>
-          <span class="block mx-3">{{ item.framework }}</span>
-          <span class="block mx-3">{{ item.language }}</span>
-          <span class="block mx-3">{{ item['supported-light-clients'] }}</span>
-          <span class="block mx-3">{{ item.implementer }}</span>
+          <div class="mx-3 badge bg-yellow text-dark">{{ item.status }}</div>
+          <div class="block mx-3">
+            {{ item.framework }}
+          </div>
+          <div class="block mx-3">{{ item.language }}</div>
+          <div class="block mx-3">{{ item['supported-light-clients'] }}</div>
+          <div class="block mx-3">{{ item.implementer }}</div>
         </div>
       </div>
 

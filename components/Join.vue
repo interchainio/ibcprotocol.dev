@@ -26,10 +26,10 @@
           </div>
           <div>
             <a
-              class="box-link w-16 h-16 flex justify-center items-center"
+              class="box-link w-16 h-16 flex justify-center items-center bg-theme"
               :href="c.link"
             >
-              <img class="arrow" src="~/assets/images/arrow.svg" />
+              <Arrow />
             </a>
           </div>
         </div>
@@ -71,10 +71,6 @@ export default {
 }
 
 #app {
-  .box-link {
-    @apply bg-dark;
-  }
-
   .arrow {
     -webkit-filter: invert(1);
     filter: invert(1);

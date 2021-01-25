@@ -5,15 +5,15 @@ resources:
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
     file: test.pdf
-    filetype: PDF
-    filesize: 0.8MB
+    button: Download PDF 0.8MB
+    link: sample.pdf
   - title: Technical Specification
     slug: technical-specification
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
     file: test.pdf
-    filetype: PDF
-    filesize: 0.8MB
+    button: Download PDF 0.8MB
+    link: ~assets/files/sample.pdf
 
 ibcImplementations:
   - status: alpha
@@ -85,12 +85,12 @@ guides:
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
     file: test.pdf
-    filetype: PDF
-    filesize: 0.8MB
+    button: Open Link
+    link: https://cosmos.network/ibc
   - title: How to build an IBC application
     slug: how-to-build
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
     file: test.pdf
-    filetype: PDF
-    filesize: 0.8MB
+    button: Open Link
+    link: https://cosmos.network/ibc

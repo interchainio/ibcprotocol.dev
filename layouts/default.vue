@@ -2,13 +2,8 @@
   <div id="app" :class="{ darkmode: darkMode }">
     <Ticker />
     <Nav />
-    <div v-if="isHome" class="border-gray px-8 md:px-12">
-      <Logo class="w-full my-12" />
-    </div>
     <Nuxt />
-    <div class="mt-48">
-      <Footer />
-    </div>
+    <Footer class="mt-48" />
   </div>
 </template>
 

@@ -2,13 +2,21 @@
   <div>
     <div>
       <div class="mx-auto px-8 md:px-12 max-w-6xl relative">
-        <h1 class="heading mb-16 mb:mb-32">
-          <div>The industy standard<br />protocol for</div>
-          <div class="inline-block text-gradient">
-            Inter&#8209;Blockchain<br />
-            Communication
-          </div>
-        </h1>
+        <Logo class="my-12" />
+
+        <div class="relative">
+          <h1 class="heading mb-16 mb:mb-32">
+            <div>The industy standard<br />protocol for</div>
+            <div class="inline-block text-gradient">
+              Inter&#8209;Blockchain<br />
+              Communication
+            </div>
+          </h1>
+          <img
+            class="absolute right-0 top-0 opacity-25 mt-32 -mr-16 md:opacity-100"
+            src="~/assets/images/illu-1.svg"
+          />
+        </div>
 
         <nuxt-content
           class="f-serif max-w-2xl text-md md:text-xl leading-relaxed"
@@ -23,11 +31,6 @@
             >
           </div>
         </div>
-
-        <img
-          class="absolute right-0 top-0 mt-64 opacity-25 md:opacity-100"
-          src="~/assets/images/illu-1.svg"
-        />
       </div>
     </div>
 
@@ -39,7 +42,7 @@
 
     <Institutions :institutions="institutions" />
 
-    <div class="mx-auto px-8 md:px-12 max-w-6xl relative py-16">
+    <div class="mx-auto px-8 md:px-12 max-w-6xl relative py-24">
       <img src="~/assets/images/illu-3.svg" class="w-full" />
     </div>
 

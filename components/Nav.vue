@@ -1,34 +1,20 @@
 <template>
-  <div
-    class="nav border-gray border-t border-b overflow-hidden sticky top-0 z-40"
-  >
+  <div class="nav border-gray border-t border-b sticky top-0 z-40">
     <div class="uppercase flex items-center justify-between">
-<<<<<<< Updated upstream
-      <ul class="flex -mx-2 items-center">
-        <li class="px-8 py-3 border-r flex items-center">
-          <NuxtLink to="/" class="font-bold text-light:important">IBC</NuxtLink>
-        </li>
-        <li class="mx-2 py-2">
-          <NuxtLink to="/documentation" class="mx-2">Documentation</NuxtLink>
-        </li>
-        <li class="mx-2 py-2">
-          <NuxtLink to="/faq" class="mx-2">FAQ</NuxtLink>
-=======
       <ul class="flex items-center">
-        <li class="px-10 py-4 border-r flex items-center">
-          <NuxtLink to="/" class="font-bold">IBC</NuxtLink>
+        <li class="px-6 md:px-12 py-4 md:py-6 border-r flex items-center">
+          <NuxtLink to="/" id="logo-nav"><span>IBC</span></NuxtLink>
         </li>
-        <li class="mx-8 py-4">
+        <li class="hidden md:inline-block mx-8 py-6">
           <NuxtLink to="/documentation">Documentation</NuxtLink>
         </li>
-        <li class="py-4">
+        <li class="hidden md:inline-block py-6">
           <NuxtLink to="/faq">FAQ</NuxtLink>
->>>>>>> Stashed changes
         </li>
       </ul>
       <div class="flex items-center">
         <svg
-          class="mx-8 cursor-pointer"
+          class="mx-3 md:mx-8 cursor-pointer"
           width="16"
           height="16"
           viewBox="0 0 16 16"
@@ -43,7 +29,48 @@
             stroke="#FFF1F1"
           />
         </svg>
+        <div @click="showMenu = !showMenu" class="mx-4 cursor-pointer">
+          <Hamburger v-if="!showMenu" />
+          <Close v-else class="cursor-pointer" />
+        </div>
       </div>
+    </div>
+    <div class="relative">
+      <transition name="slide-fade">
+        <div
+          v-if="showMenu"
+          class="bg-theme text-theme absolute border-t top-0 left-0 w-screen h-screen z-40"
+        >
+          <ul class="p-6">
+            <li class="mb-3">
+              <NuxtLink to="/documentation">Documentation</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/faq">FAQ</NuxtLink>
+            </li>
+          </ul>
+        </div>
+      </transition>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showMenu: false,
+    }
+  },
+}
+</script>
+
+<style lang="css">
+#app #logo-nav {
+  @apply text-dark;
+}
+
+#app.darkmode #logo-nav {
+  @apply text-light;
+}
+</style>

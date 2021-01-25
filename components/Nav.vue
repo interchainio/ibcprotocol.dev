@@ -29,14 +29,17 @@
             stroke="#FFF1F1"
           />
         </svg>
-        <div @click="showMenu = !showMenu" class="mx-4 cursor-pointer">
+        <div
+          @click="showMenu = !showMenu"
+          class="md:hidden mx-4 cursor-pointer"
+        >
           <Hamburger v-if="!showMenu" />
           <Close v-else class="cursor-pointer" />
         </div>
       </div>
     </div>
     <div class="relative">
-      <transition name="slide-fade">
+      <transition name="fade">
         <div
           v-if="showMenu"
           class="bg-theme text-theme absolute border-t top-0 left-0 w-screen h-screen z-40"

@@ -1,4 +1,4 @@
-@import transitions;
+@import './transitions';
 
 body {
   font-family: 'CMU-UI', 'Helvetica', 'Arial', sans-serif;

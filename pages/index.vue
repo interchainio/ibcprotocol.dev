@@ -2,7 +2,7 @@
   <div>
     <div>
       <div class="mx-auto px-8 md:px-12 max-w-6xl relative">
-        <Logo class="my-12" />
+        <Logo class="md:my-12 w-full" />
 
         <div class="relative">
           <h1 class="heading mb-16 mb:mb-32">

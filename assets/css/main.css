@@ -113,7 +113,11 @@ svg {
 }
 
 .heading {
-  @apply text-lg leading-tight uppercase;
+  @apply text-2xl leading-tight uppercase;
+
+  @screen sm {
+    @apply leading-normal;
+  }
 
   @screen md {
     @apply text-3xl;

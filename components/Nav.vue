@@ -3,7 +3,7 @@
     <div class="uppercase flex items-center justify-between">
       <ul class="flex items-center">
         <li class="px-6 md:px-12 py-4 md:py-6 border-r flex items-center">
-          <NuxtLink to="/" id="logo-nav"><span>IBC</span></NuxtLink>
+          <NuxtLink id="logo-nav" to="/"><span>IBC</span></NuxtLink>
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
           <NuxtLink to="/documentation">Documentation</NuxtLink>
@@ -30,8 +30,8 @@
           />
         </svg>
         <div
-          @click="showMenu = !showMenu"
           class="md:hidden mx-4 cursor-pointer"
+          @click="showMenu = !showMenu"
         >
           <Hamburger v-if="!showMenu" />
           <Close v-else class="cursor-pointer" />

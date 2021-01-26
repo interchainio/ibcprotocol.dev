@@ -31,7 +31,7 @@ module.exports = {
       light: '#FFF1F1',
     },
     fontSize: {
-      xxs: '0.5rem',
+      xxs: '0.6rem',
       xs: '.75rem',
       sm: '.875rem',
       tiny: '.875rem',

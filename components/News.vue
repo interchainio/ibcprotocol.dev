@@ -12,7 +12,7 @@
           class="text-md md:text-2xl leading-tight mb-4"
           v-html="article.title"
         />
-        <p class="text-base f-serif mb-16" v-html="article.description" />
+        <p class="text-base f-serif mb-16" v-text="article.description" />
       </li>
     </ul>
   </div>

@@ -22,9 +22,9 @@ ibcImplementations:
     supported-light-clients: Tendermint Light Client
     implementer: Example
     links:
-      - title: source
+      - title: Github
         link: www.test.dev
-      - title: homepage
+      - title: Homepage
         link: www.test2.dev
   - status: alpha
     framework: Cosmos SDK
@@ -32,9 +32,9 @@ ibcImplementations:
     supported-light-clients: Tendermint Light Client
     implementer: Example
     links:
-      - title: source
+      - title: Gitlab
         link: www.test.dev
-      - title: homepage
+      - title: Documentation
         link: www.test2.dev
   - status: alpha
     framework: Cosmos SDK
@@ -42,9 +42,9 @@ ibcImplementations:
     supported-light-clients: Tendermint Light Client
     implementer: Example
     links:
-      - title: source
+      - title: Blog Post
         link: www.test.dev
-      - title: homepage
+      - title: Source Code
         link: www.test2.dev
 
 relayerImplementations:

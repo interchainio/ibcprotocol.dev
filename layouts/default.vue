@@ -36,8 +36,6 @@ export default {
   },
   methods: {
     setDarkModeToken() {
-      console.log('hi')
-      console.log(this.darkMode)
       window.localStorage.setItem('dark-mode', this.darkMode)
     },
   },

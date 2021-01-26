@@ -170,7 +170,7 @@ a:hover {
   &.bg-yellow {
     @apply text-dark bg-yellow !important;
   }
-  
+
   &.text-base {
     @apply text-base;
   }

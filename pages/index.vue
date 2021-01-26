@@ -6,8 +6,12 @@
 
         <div class="relative">
           <h1 class="heading mb-16 mb:mb-32">
-            <div>The industy standard<br />protocol for</div>
-            <div class="inline-block text-gradient">
+            <div class="leading-normal md:leading-tight">
+              The industy standard<br />protocol for
+            </div>
+            <div
+              class="inline-block text-gradient leading-normal md:leading-tight"
+            >
               Inter&#8209;Blockchain<br />
               Communication
             </div>

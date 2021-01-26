@@ -1,5 +1,6 @@
 ---
 resources:
+  type: blocks
   - title: Overview Paper
     slug: overview-paper
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -16,38 +17,65 @@ resources:
     link: ~assets/files/sample.pdf
 
 ibcImplementations:
-  - status: alpha
-    framework: Cosmos SDK
-    language: Golang
-    supported-light-clients: Tendermint Light Client
-    implementer: Example
+  type: table
+  - item:
+    badge:
+      title: Alpha
+      color: Yellow
+    content:
+      - title: Framework
+        text: Cosmos SDK
+      - title: Language
+        text: Golang
+      - title: Supported Light Clients
+        text: Tenderming Light Client
+      - title: Implementer
+        text: Example
     links:
       - title: source
         link: www.test.dev
       - title: homepage
         link: www.test2.dev
-  - status: alpha
-    framework: Cosmos SDK
-    language: Golang
-    supported-light-clients: Tendermint Light Client
-    implementer: Example
+  - item:
+    badge:
+      title: Alpha
+      color: Yellow
+    content:
+      - title: Framework
+        text: Cosmos SDK
+      - title: Language
+        text: Golang
+      - title: Supported Light Clients
+        text: Tenderming Light Client
+      - title: Implementer
+        text: Example
     links:
       - title: source
         link: www.test.dev
       - title: homepage
         link: www.test2.dev
-  - status: alpha
-    framework: Cosmos SDK
-    language: Golang
-    supported-light-clients: Tendermint Light Client
-    implementer: Example
+  - item:
+    badge:
+      title: Alpha
+      color: Yellow
+    content:
+      - title: Framework
+        text: Cosmos SDK
+      - title: Language
+        text: Golang
+      - title: Supported Light Clients
+        text: Tenderming Light Client
+      - title: Implementer
+        text: Example
     links:
       - title: source
         link: www.test.dev
       - title: homepage
         link: www.test2.dev
 
+
 relayerImplementations:
+  type: table
   - status: alpha
     framework: Cosmos SDK
     language: Golang
@@ -80,6 +108,7 @@ relayerImplementations:
         link: www.test2.dev
 
 guides:
+  type: blocks
   - title: How to integrate IBC into a blockchain
     slug: how-to-integrate
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy

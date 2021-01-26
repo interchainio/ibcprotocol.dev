@@ -15,11 +15,6 @@ import Footer from '~/components/Footer'
 export default {
   name: 'Default',
   components: { Nav, Ticker, Footer },
-  created() {
-    this.$nuxt.$on('toggle-dark-mode', () => {
-      this.darkMode = !this.darkMode
-    })
-  },
   data() {
     return {
       darkMode: window.matchMedia('(prefers-color-scheme: dark)'),
@@ -29,6 +24,11 @@ export default {
     isHome() {
       return this.$route.path === '/'
     },
+  },
+  created() {
+    this.$nuxt.$on('toggle-dark-mode', () => {
+      this.darkMode = !this.darkMode
+    })
   },
   async mounted() {
     const meta = await this.$content('meta').fetch()

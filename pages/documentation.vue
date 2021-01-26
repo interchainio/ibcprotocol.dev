@@ -21,50 +21,170 @@
       </div>
 
       <h1 class="heading-sm mb-6">IBC Implementations</h1>
-      <div
-        v-for="(item, index) in page.ibcImplementations"
-        :key="index"
-        class="w-full flex flex-col md:flex-row justify-start items-start py-3 border-t border-theme border-opacity-20 f-serif relative"
-      >
-        <div class="m-3 badge bg-yellow text-dark absolute right-0 top-0">
-          {{ item.status }}
-        </div>
-
+      <div class="flex flex-wrap md:-mx-3">
         <div
-          class="block flex flex-col items-start mb-2 md:mx-3 md:flex-row md:items-center"
+          v-for="(item, index) in page.ibcImplementations"
+          :key="index"
+          class="w-full md:w-1/2 f-serif relative md:px-3 md:mb-3"
         >
-          <div class="w-48 text-xxs uppercase">Framework</div>
-          <div>{{ item.framework }}</div>
-        </div>
+          <div
+            class="flex flex-col justify-start items-start py-3 border-t border-theme border-opacity-20"
+          >
+            <div
+              class="mt-3 lg:mr-3 badge bg-yellow text-dark absolute right-0 top-0"
+            >
+              {{ item.status }}
+            </div>
 
-        <div class="block mx-3 flex items-center">
-          <div class="w-48 text-xs uppercase">Language</div>
-          <div>{{ item.language }}</div>
-        </div>
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Framework
+              </div>
+              <div>{{ item.framework }}</div>
+            </div>
 
-        <div class="block mx-3 flex items-center">
-          <div class="w-48 text-xs uppercase">Supported Light Clients</div>
-          <div>{{ item['supported-light-clients'] }}</div>
-        </div>
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Language
+              </div>
+              <div>{{ item.language }}</div>
+            </div>
 
-        <div class="block mx-3 flex items-center">
-          <div class="w-48 text-xs uppercase">Implementer</div>
-          <div>{{ item.implementer }}</div>
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Supported Light Clients
+              </div>
+              <div>{{ item['supported-light-clients'] }}</div>
+            </div>
+
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Implementer
+              </div>
+              <div>{{ item.implementer }}</div>
+            </div>
+
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Links
+              </div>
+              <div>
+                <ul>
+                  <li
+                    v-for="(link, idx) in item.links"
+                    :key="idx"
+                    class="inline mr-3 md:mr-0 md:block"
+                  >
+                    <a :href="link.link">{{ link.title }}</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <h1 class="heading-sm mb-6">Relayer Implementations</h1>
-      <div class="flex flex-wrap">
+      <div class="flex flex-wrap md:-mx-3">
         <div
-          v-for="(item, index) in page.relayerImplementations"
+          v-for="(item, index) in page.ibcImplementations"
           :key="index"
-          class="w-full flex items-center -mx-3 py-3 border-t border-theme border-opacity-20 f-serif"
+          class="w-full md:w-1/2 f-serif relative md:px-3 md:mb-3"
         >
-          <span class="mx-3 badge bg-yellow text-dark">{{ item.status }}</span>
-          <span class="mx-3">{{ item.framework }}</span>
-          <span class="mx-3">{{ item.language }}</span>
-          <span class="mx-3">{{ item['supported-light-clients'] }}</span>
-          <span class="mx-3">{{ item.implementer }}</span>
+          <div
+            class="flex flex-col justify-start items-start py-3 border-t border-theme border-opacity-20"
+          >
+            <div
+              class="mt-3 lg:mr-3 badge bg-yellow text-dark absolute right-0 top-0"
+            >
+              {{ item.status }}
+            </div>
+
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Framework
+              </div>
+              <div>{{ item.framework }}</div>
+            </div>
+
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Language
+              </div>
+              <div>{{ item.language }}</div>
+            </div>
+
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Supported Light Clients
+              </div>
+              <div>{{ item['supported-light-clients'] }}</div>
+            </div>
+
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Implementer
+              </div>
+              <div>{{ item.implementer }}</div>
+            </div>
+
+            <div
+              class="block flex flex-col items-start mb-3 md:mb-2 md:flex-row md:items-start"
+            >
+              <div
+                class="w-48 text-xxs md:w-72 md:mr-3 md:text-xs uppercase md:mt-1"
+              >
+                Links
+              </div>
+              <div>
+                <ul>
+                  <li
+                    v-for="(link, idx) in item.links"
+                    :key="idx"
+                    class="inline mr-3 md:mr-0 md:block"
+                  >
+                    <a :href="link.link">{{ link.title }}</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -10,7 +10,7 @@
         <Title-Line :index="index" />
         <h2
           class="text-md md:text-2xl leading-tight mb-4"
-          v-text="article.title"
+          v-html="article.title"
         />
         <p class="text-base f-serif mb-16" v-text="article.description" />
       </li>

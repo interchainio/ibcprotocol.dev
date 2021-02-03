@@ -34,14 +34,14 @@ export default {
       this.setDarkModeToken()
     })
   },
+  async mounted() {
+    const meta = await this.$content('meta').fetch()
+    this.$store.commit('setMeta', meta)
+  },
   methods: {
     setDarkModeToken() {
       window.localStorage.setItem('dark-mode', this.darkMode)
     },
-  },
-  async mounted() {
-    const meta = await this.$content('meta').fetch()
-    this.$store.commit('setMeta', meta)
   },
 }
 </script>

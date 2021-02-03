@@ -4,38 +4,34 @@ resources:
     slug: overview-paper
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-    file: test.pdf
-    button: Download PDF 0.8MB
-    link: sample.pdf
+    button: Download PDF v1.0
+    link: https://media.githubusercontent.com/media/cosmos/ics/master/papers/2020-05/build/paper.pdf
   - title: Technical Specification
     slug: technical-specification
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-    file: test.pdf
-    button: Download PDF 0.8MB
-    link: ~assets/files/sample.pdf
+    button: Download PDF v1.0.1
+    link: https://github.com/cosmos/ics/blob/master/spec.pdf
 
 ibcImplementations:
-  - status: alpha
+  - status: 1.0 Release
     framework: Cosmos SDK
     language: Golang
     supported-light-clients: Tendermint Light Client
-    implementer: Example
+    implementer: Interchain GmbH, Informal Systems (auditor)
     links:
-      - title: Github
-        link: www.test.dev
-      - title: Homepage
-        link: www.test2.dev
-  - status: alpha
-    framework: Cosmos SDK
-    language: Golang
-    supported-light-clients: Tendermint Light Client
-    implementer: Example
+      - title: Issue Tracking
+        link: https://github.com/cosmos/ics/issues/145
+      - title: Source
+        link: https://github.com/cosmos/cosmos-sdk/pull/4548
+  - status: Upcoming
+    framework: Tendermint-rs
+    language: Rust
+    supported-light-clients: [tendermint-rs](https://github.com/informalsystems/tendermint-rs)
+    implementer: [Informal Systems](https://informal.systems)
     links:
-      - title: Gitlab
-        link: www.test.dev
-      - title: Documentation
-        link: www.test2.dev
+      - title: Source Code
+        link: https://github.com/informalsystems/ibc-rs
   - status: alpha
     framework: Cosmos SDK
     language: Golang

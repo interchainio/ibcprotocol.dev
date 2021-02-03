@@ -3,7 +3,7 @@
     <img class="ml-auto mt-12" src="~/assets/images/illu-5.svg" />
     <div class="-mt-24 max-w-xl mx-6 lg:mx-0">
       <div v-for="(item, idx) in items" :key="idx">
-        <h1 class="pt-24 heading-sm" :id="item.slug">{{ item.title }}</h1>
+        <h1 :id="item.slug" class="pt-16 heading-sm">{{ item.title }}</h1>
         <TitleLine :index="idx" class="mt-6" />
         <nuxt-content class="f-serif max-w-prose" :document="item" />
       </div>
@@ -31,9 +31,15 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .toc {
   top: 120px;
   margin-right: 50px;
+}
+
+.content {
+  a {
+    text-decoration: underline !important;
+  }
 }
 </style>

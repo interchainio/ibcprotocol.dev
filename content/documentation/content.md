@@ -22,7 +22,7 @@ ibcImplementations:
       supported-light-clients: Tendermint Light Client
       implementer: Interchain GmbH, Informal Systems (auditor)
       links: |
-        <a href="https://github.com/cosmos/ics/issues/145">Issue Tracker</a>, <a href="https://github.com/cosmos/cosmos-sdk/pull/4548">Source</a>
+        <a href="https://github.com/cosmos/ics/issues/145">Issue Tracker</a>,&nbsp;<a href="https://github.com/cosmos/cosmos-sdk/pull/4548">Source</a>
   - badgeLabel: Upcoming
     badgeColor: yellow
     content:

@@ -23,11 +23,11 @@
             class="mb-3 leading-tight"
           >
             <a
+              v-scroll-to="{ el: `#${item.slug}`, offset: -150, duration: 300 }"
               :href="`#${item.slug}`"
               :class="{
                 'text-red': activeItem === item.slug || activeItem === idx,
               }"
-              v-scroll-to="{ el: `#${item.slug}`, offset: -150, duration: 300 }"
               >{{ item.title }}</a
             >
           </li>
@@ -54,6 +54,17 @@ export default {
       activeItem: 0,
       TOCListener: null,
     }
+  },
+  watch: {
+    items() {
+      this.activeItem = this.items[0].slug
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.onScroll)
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.onScroll)
   },
   methods: {
     bottom() {
@@ -89,17 +100,6 @@ export default {
         (window.innerHeight / 3 || document.documentElement.clientHeight / 3)
       )
     },
-  },
-  watch: {
-    items() {
-      this.activeItem = this.items[0].slug
-    },
-  },
-  mounted() {
-    window.addEventListener('scroll', this.onScroll)
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.onScroll)
   },
 }
 </script>

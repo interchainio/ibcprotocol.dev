@@ -14,66 +14,71 @@ resources:
     link: https://github.com/cosmos/ics/blob/master/spec.pdf
 
 ibcImplementations:
-  - status: 1.0 Release
-    framework: Cosmos SDK
-    language: Golang
-    supported-light-clients: Tendermint Light Client
-    implementer: Interchain GmbH, Informal Systems (auditor)
-    links:
-      - title: Issue Tracking
-        link: https://github.com/cosmos/ics/issues/145
-      - title: Source
-        link: https://github.com/cosmos/cosmos-sdk/pull/4548
-  - status: Upcoming
-    framework: Tendermint-rs
-    language: Rust
-    supported-light-clients: [tendermint-rs](https://github.com/informalsystems/tendermint-rs)
-    implementer: [Informal Systems](https://informal.systems)
-    links:
-      - title: Source Code
-        link: https://github.com/informalsystems/ibc-rs
-  - status: alpha
-    framework: Cosmos SDK
-    language: Golang
-    supported-light-clients: Tendermint Light Client
-    implementer: Example
-    links:
-      - title: Blog Post
-        link: www.test.dev
-      - title: Source Code
-        link: www.test2.dev
+  - badgeLabel: 1.0 Release
+    badgeColor: green
+    content:
+      framework: Cosmos SDK
+      language: Golang
+      supported-light-clients: Tendermint Light Client
+      implementer: Interchain GmbH, Informal Systems (auditor)
+      links: |
+        <a href="https://github.com/cosmos/ics/issues/145">Issue Tracker</a>, <a href="https://github.com/cosmos/cosmos-sdk/pull/4548">Source</a>
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      framework: Tendermint-rs
+      language: Rust
+      supported-light-clients: |
+        <a href="https://github.com/informalsystems/tendermint-rs">tendermint-rs</a>
+      implementer: |
+        <a href="https://informal.systems">Informal Systems</a>
+      links: |
+        <a href="https://github.com/informalsystems/ibc-rs">Source Code</a>
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      framework: Kepler
+      language: Haskell
+      supported-light-clients:
+      implementer: |
+        <a href="https://kadena.io">Kadena</a>
+      links:
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      framework: Codechain
+      language: Rust
+      supported-light-clients:
+      implementer: |
+        <a href="https://codechain.io">CodeChain</a>
+      links: |
+        <a href="https://github.com/CodeChain-io/codechain">Source Code</a>
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      framework: Substrate
+      language: Rust
+      supported-light-clients:
+      implementer: |
+        <a href="https://cdot.network">Cdot Network</a>
+      links: |
+        <a href="https://github.com/cdot-network/substrate-ibc">Source Code</a>
 
 relayerImplementations:
-  - status: alpha
-    framework: Cosmos SDK
-    language: Golang
-    supported-light-clients: Tendermint Light Client
-    implementer: Example
-    links:
-      - title: source
-        link: www.test.dev
-      - title: homepage
-        link: www.test2.dev
-  - status: alpha
-    framework: Cosmos SDK
-    language: Golang
-    supported-light-clients: Tendermint Light Client
-    implementer: Example
-    links:
-      - title: source
-        link: www.test.dev
-      - title: homepage
-        link: www.test2.dev
-  - status: alpha
-    framework: Cosmos SDK
-    language: Golang
-    supported-light-clients: Tendermint Light Client
-    implementer: Example
-    links:
-      - title: source
-        link: www.test.dev
-      - title: homepage
-        link: www.test2.dev
+  - badgeLabel: Alpha
+    badgeColor: lightGray
+    content:
+      language: Golang
+      implementer: Cosmos Community
+      links: |
+        <a href="https://github.com/cosmos/relayer">Source Code</a>
+  - badgeLabel: Alpha
+    badgeColor: lightGray
+    content:
+      language: Rust
+      implementer: Informal
+      links: |
+        <a href="https://github.com/informalsystems/ibc-rs/tree/master/relayer-cli">Source Code</a>
 
 guides:
   - title: How to integrate IBC into a blockchain
@@ -82,11 +87,11 @@ guides:
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
     file: test.pdf
     button: Open Link
-    link: https://cosmos.network/ibc
+    link: https://docs.cosmos.network/master/ibc/integration.html
   - title: How to build an IBC application
     slug: how-to-build
     description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
     file: test.pdf
     button: Open Link
-    link: https://cosmos.network/ibc
+    link: https://docs.cosmos.network/master/ibc/custom.html

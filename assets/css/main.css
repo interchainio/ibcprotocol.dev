@@ -171,6 +171,10 @@ a:hover {
     @apply text-dark bg-yellow !important;
   }
 
+  &.bg-green {
+    @apply text-dark bg-green !important;
+  }
+
   &.text-base {
     @apply text-base;
   }

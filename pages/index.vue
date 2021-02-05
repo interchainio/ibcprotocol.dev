@@ -7,7 +7,7 @@
         <div class="relative">
           <h1 class="heading mb-16 mb:mb-32">
             <div class="leading-normal md:leading-tight">
-              The industy standard<br />protocol for
+              The industry standard<br />protocol for
             </div>
             <div
               class="inline-block text-gradient leading-normal md:leading-tight"
@@ -48,28 +48,30 @@
       <img src="~/assets/images/illu-2.svg" class="w-full" />
     </div>
 
-    <Institutions :institutions="institutions" />
+    <Organizations :content="organizations" />
 
     <div class="mx-auto px-8 md:px-12 max-w-6xl relative py-24">
       <img src="~/assets/images/illu-3.svg" class="w-full" />
     </div>
 
     <div class="mx-auto max-w-6xl relative">
-      <Join :community="community" />
+      <Join :content="community" />
     </div>
   </div>
 </template>
 
 <script>
 import News from '~/components/News'
-import Institutions from '~/components/Institutions'
+import Organizations from '~/components/Organizations'
 import Join from '~/components/Join'
 
 export default {
-  components: { News, Institutions, Join },
+  components: { News, Organizations, Join },
 
   async asyncData({ $content }) {
     const page = await $content('index/intro').fetch()
+    const organizations = await $content('index/organizations').fetch()
+    const community = await $content('index/community').fetch()
 
     const news = await $content('news')
       .only(['title', 'description'])
@@ -77,56 +79,7 @@ export default {
       .sortBy('date', 'desc')
       .fetch()
 
-    return { page, news }
-  },
-
-  data() {
-    return {
-      institutions: [
-        {
-          name: 'Agoric',
-          link: 'https://agoric.com/',
-        },
-        {
-          name: 'Interchain Foundation',
-          link: 'https://interchain.io/',
-        },
-        {
-          name: 'Interchain Berlin',
-          link: 'https://interchain.berlin/',
-        },
-        {
-          name: 'Tendermint',
-          link: 'https://tendermint.com/',
-        },
-        {
-          name: 'Informal Systems',
-          link: 'https://informal.systems/',
-        },
-        {
-          name: 'iqlusion',
-          link: 'https://www.iqlusion.io/',
-        },
-      ],
-
-      community: [
-        {
-          title: 'Chat with IBC Developers',
-          subtitle: 'Community Discord',
-          link: '#',
-        },
-        {
-          title: 'Discuss IBC',
-          subtitle: 'Forum',
-          link: '#',
-        },
-        {
-          title: 'Enter Email for Updates',
-          subtitle: 'Zero Spam. Privacy Policy',
-          link: '#',
-        },
-      ],
-    }
+    return { page, news, community, organizations }
   },
 }
 </script>

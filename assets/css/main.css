@@ -56,6 +56,10 @@ svg {
     @apply bg-light;
   }
 
+  .bg-contrast {
+    @apply bg-dark;
+  }
+
   .border-theme {
     border-color: #323232;
   }
@@ -84,6 +88,10 @@ svg {
 
   .bg-theme {
     @apply bg-dark;
+  }
+
+  .bg-contrast {
+    @apply bg-light;
   }
 
   .fill, svg.fill {
@@ -119,6 +127,10 @@ svg {
 
 .nuxt-link-exact-active:not(.nocolor) {
   @apply text-red;
+}
+
+.underline-links a {
+  text-decoration: underline;
 }
 
 a:hover {

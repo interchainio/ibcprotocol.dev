@@ -7,7 +7,7 @@
       class="flex flex-col md:flex-row justify-center mx-auto max-w-7xl px-8 md:px-12"
     >
       <div
-        v-for="(c, index) in community"
+        v-for="(c, index) in content.community"
         :key="index"
         class="w-full md:w-1/3 speech-bubble"
         :class="{
@@ -15,23 +15,26 @@
           'pt-16 md:pt-32': index === 2,
         }"
       >
-        <div
-          class="container relative flex border border-gray justify-between w-full box-tall"
-        >
-          <div class="p-6">
-            <div class="uppercase leading-tight mb-8 text-xl">
-              {{ c.title }}
+        <div class="container border border-gray box-tall">
+          <a
+            :href="c.link"
+            target="_blank"
+            class="relative flex w-full justify-between"
+          >
+            <div class="p-6">
+              <div class="uppercase leading-tight mb-8 text-xl">
+                {{ c.title }}
+              </div>
+              <div class="f-serif">{{ c.subtitle }}</div>
             </div>
-            <div class="f-serif">{{ c.subtitle }}</div>
-          </div>
-          <div>
-            <a
-              class="box-link w-16 h-16 flex justify-center items-center bg-theme"
-              :href="c.link"
-            >
-              <Arrow />
-            </a>
-          </div>
+            <div>
+              <span
+                class="box-link w-16 h-16 flex justify-center items-center bg-contrast"
+              >
+                <Arrow />
+              </span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -41,8 +44,8 @@
 <script>
 export default {
   props: {
-    community: {
-      type: Array,
+    content: {
+      type: Object,
       required: true,
     },
   },

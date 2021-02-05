@@ -23,10 +23,15 @@
           <span class="mr-2"
             ><a
               href="https://forum.cosmos.network/t/welcome-to-cosmos-forum-read-this-to-get-started/29"
+              target="_blank"
               >forum</a
             ></span
           >
-          <span><a href="https://discord.gg/vcExX9T">discord</a></span>
+          <span
+            ><a href="https://discord.gg/vcExX9T" target="_blank"
+              >discord</a
+            ></span
+          >
         </div>
       </div>
     </div>

@@ -29,20 +29,6 @@
         <stop offset="1" stop-color="#6773e2" stop-opacity="0" />
       </linearGradient>
     </defs>
-    <style>
-      tspan {
-        white-space: pre;
-      }
-      .shp0 {
-        fill: #fff1f1;
-      }
-      .shp1 {
-        fill: url(#grd1);
-      }
-      .shp2 {
-        fill: url(#grd2);
-      }
-    </style>
     <path
       id="Layer"
       class="fill"

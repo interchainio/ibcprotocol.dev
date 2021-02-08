@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .title-line {
   width: 90px;
   height: 1px;

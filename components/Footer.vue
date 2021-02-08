@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="css" scoped>
 .flipped {
   transform: rotate(-180deg);
 }

@@ -25,8 +25,8 @@
       <div class="flex flex-wrap md:-mx-4">
         <Card
           v-for="(item, idx) in page.ibcImplementations"
-          :item="item"
           :key="idx"
+          :item="item"
         />
       </div>
 
@@ -34,8 +34,8 @@
       <div class="flex flex-wrap md:-mx-4">
         <Card
           v-for="(item, idx) in page.relayerImplementations"
-          :item="item"
           :key="idx"
+          :item="item"
         />
       </div>
 

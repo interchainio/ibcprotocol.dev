@@ -41,7 +41,7 @@ ibcImplementations:
       language: Haskell
       supported-light-clients:
       implementer: |
-        <a href="https://kadena.io">Kadena</a>
+        <a href="https://foam.space/">FOAM</a>
       links:
   - badgeLabel: Upcoming
     badgeColor: yellow
@@ -58,7 +58,7 @@ ibcImplementations:
     content:
       framework: Substrate
       language: Rust
-      supported-light-clients:
+      supported-light-clients: Grandpa Light-client
       implementer: |
         <a href="https://cdot.network">Cdot Network</a>
       links: |

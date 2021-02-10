@@ -1,5 +1,13 @@
 <template>
   <div>
+    <a
+      v-if="banner"
+      :href="banner.link"
+      class="block uppercase py-4 lg:text-xl border-b border-theme text-center relative leading-tight"
+      target="_blank"
+      v-html="banner.title"
+    >
+    </a>
     <div>
       <div class="mx-auto px-4 md:px-12 max-w-6xl relative">
         <Logo class="md:my-12 w-full md:w-auto" />
@@ -69,6 +77,7 @@ export default {
   components: { News, Organizations, Join },
 
   async asyncData({ $content }) {
+    const banner = await $content('index/banner').fetch()
     const page = await $content('index/intro').fetch()
     const organizations = await $content('index/organizations').fetch()
     const community = await $content('index/community').fetch()
@@ -79,7 +88,7 @@ export default {
       .sortBy('date', 'desc')
       .fetch()
 
-    return { page, news, community, organizations }
+    return { banner, page, news, community, organizations }
   },
 }
 </script>

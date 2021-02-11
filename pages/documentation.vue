@@ -39,6 +39,15 @@
         />
       </div>
 
+      <h1 class="heading-sm mb-6">IBC Applications</h1>
+      <div class="flex flex-wrap md:-mx-4">
+        <Card
+          v-for="(item, idx) in page.ibcApplications"
+          :key="idx"
+          :item="item"
+        />
+      </div>
+
       <h1 class="heading-sm mb-6">Cosmos SDK Guides</h1>
       <div class="flex flex-wrap">
         <div

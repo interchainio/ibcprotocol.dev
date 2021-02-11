@@ -80,6 +80,24 @@ relayerImplementations:
       links: |
         <a href="https://github.com/informalsystems/ibc-rs/tree/master/relayer-cli">Source Code</a>
 
+ibcApplications:
+  - badgeLabel: 1.0 Release
+    badgeColor: green
+    content:
+      application: Fungible Token Transfer
+      framework: Cosmos SDK
+      implementer: Interchain GmbH
+      links: |
+        <a href="https://github.com/cosmos/cosmos-sdk/tree/master/x/ibc/applications/transfer">Source Code</a>,&nbsp;<a href="https://github.com/cosmos/ics/tree/master/spec/ics-020-fungible-token-transfer">Specification</a>
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      application: Interchain Accounts
+      framework: Cosmos SDK
+      implementer: Chainapsis
+      links: |
+        <a href="https://github.com/chainapsis/cosmos-sdk-interchain-account">Source Code</a>,&nbsp;<a href="https://github.com/cosmos/ics/tree/master/spec/ics-027-interchain-accounts">Specification</a>
+
 guides:
   - title: How to integrate IBC into a blockchain
     slug: how-to-integrate

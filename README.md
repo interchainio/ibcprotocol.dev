@@ -23,11 +23,11 @@ $ yarn generate
 - News items are added in the `/content/news` subfolder
 - News items are sorted by the `date` frontmatter
 
-## Documentation
+### Documentation
 - The `/content/documentation/content.md` file contains corresponding items for the documentation page.
 - As the documentation grows, it may make sense to break each piece into separate files
 
-## FAQ
+### FAQ
 - Each question is a corresponding markdown file in `/content/faq`
 - FAQ items are ordered by the `order` frontmatter
 - The TOC for the FAQ is automatically generated

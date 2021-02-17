@@ -37,12 +37,42 @@
           </a>
         </div>
       </div>
+      <div class="w-full md:w-1/3 speech-bubble pt-16 md:pt-32">
+        <div
+          class="container border border-gray box-tall relative cursor-pointer"
+        >
+          <div @click="showForm = true" class="p-6 hover:text-red">
+            <div class="uppercase leading-tight mb-8 text-xl">Get Updates</div>
+            <div class="f-serif">Sign up to the newsletter</div>
+          </div>
+          <div class="absolute top-0 right-0">
+            <span
+              class="box-link w-16 h-16 flex justify-center items-center bg-contrast"
+            >
+              <Arrow />
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
+    <transition name="fade">
+      <NewsletterForm v-if="showForm" @close="showForm = false" />
+    </transition>
   </div>
 </template>
 
 <script>
+import NewsletterForm from '~/components/NewsletterForm'
+
 export default {
+  components: { NewsletterForm },
+
+  data() {
+    return {
+      showForm: false,
+    }
+  },
+
   props: {
     content: {
       type: Object,

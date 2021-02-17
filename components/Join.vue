@@ -41,7 +41,7 @@
         <div
           class="container border border-gray box-tall relative cursor-pointer"
         >
-          <div @click="showForm = true" class="p-6 hover:text-red">
+          <div class="p-6 hover:text-red" @click="showForm = true">
             <div class="uppercase leading-tight mb-8 text-xl">Get Updates</div>
             <div class="f-serif">Sign up to the newsletter</div>
           </div>
@@ -67,17 +67,17 @@ import NewsletterForm from '~/components/NewsletterForm'
 export default {
   components: { NewsletterForm },
 
-  data() {
-    return {
-      showForm: false,
-    }
-  },
-
   props: {
     content: {
       type: Object,
       required: true,
     },
+  },
+
+  data() {
+    return {
+      showForm: false,
+    }
   },
 
   computed: {

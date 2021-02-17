@@ -93,6 +93,11 @@ export default {
       },
     }
   },
+  mounted() {
+    this.$nextTick(() => {
+      this.$refs.email.focus()
+    })
+  },
   methods: {
     actionSubmitEmail() {
       const options = {
@@ -114,11 +119,6 @@ export default {
           this.state = 'error'
         })
     },
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.$refs.email.focus()
-    })
   },
 }
 </script>

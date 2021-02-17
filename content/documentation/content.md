@@ -39,16 +39,16 @@ ibcImplementations:
     content:
       framework: Kepler
       language: Haskell
-      supported-light-clients:
+      supported-light-clients: N/A
       implementer: |
         <a href="https://foam.space/">FOAM</a>
-      links:
+      links: N/A
   - badgeLabel: Upcoming
     badgeColor: yellow
     content:
       framework: Codechain
       language: Rust
-      supported-light-clients:
+      supported-light-clients: N/A
       implementer: |
         <a href="https://codechain.io">CodeChain</a>
       links: |

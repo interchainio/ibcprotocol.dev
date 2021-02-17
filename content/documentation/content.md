@@ -102,14 +102,14 @@ guides:
   - title: How to integrate IBC into a blockchain
     slug: how-to-integrate
     description: |
-      Learn how to integrate IBC to your application and send data packets to other chains.
+      Are you building a blockchain on top of the Cosmos SDK? Check out this guide to learn how to integrate IBC and start connecting with other chains!
     file: test.pdf
     button: Open Link
     link: https://docs.cosmos.network/master/ibc/integration.html
   - title: How to build an IBC application
     slug: how-to-build
     description: |
-      Learn how to configure your application to use IBC and send data packets to other chains.
+      Learn how to build an application on top of the IBC protocol (e.g. cross-chain token transfers). 
     file: test.pdf
     button: Open Link
     link: https://docs.cosmos.network/master/ibc/custom.html

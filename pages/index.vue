@@ -83,7 +83,7 @@ export default {
     const community = await $content('index/community').fetch()
 
     const news = await $content('news')
-      .only(['title', 'description'])
+      .only(['title', 'description', 'link'])
       .limit(4)
       .sortBy('date', 'desc')
       .fetch()

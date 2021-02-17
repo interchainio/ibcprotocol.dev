@@ -7,12 +7,27 @@
         :key="index"
         class="w-full md:w-1/2 pr-0 md:pr-16"
       >
-        <Title-Line :index="index" />
-        <h2
-          class="text-md md:text-2xl leading-tight mb-4"
-          v-html="article.title"
-        />
-        <p class="text-base f-serif mb-16" v-text="article.description" />
+        <a
+          v-if="article.link"
+          :href="article.link"
+          target="_blank"
+          class="block"
+        >
+          <Title-Line :index="index" />
+          <h2
+            class="text-md md:text-2xl leading-tight mb-4"
+            v-html="article.title"
+          />
+          <p class="text-base f-serif mb-16" v-text="article.description" />
+        </a>
+        <div v-else>
+          <Title-Line :index="index" />
+          <h2
+            class="text-md md:text-2xl leading-tight mb-4"
+            v-html="article.title"
+          />
+          <p class="text-base f-serif mb-16" v-text="article.description" />
+        </div>
       </li>
     </ul>
   </div>

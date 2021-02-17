@@ -2,16 +2,16 @@
 resources:
   - title: Overview Paper
     slug: overview-paper
-    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    description: |
+      The interblockchain communication protocol (IBC) is an end-to-end, connection-oriented, stateful protocol for reliable, ordered, and authenticated communication between modules on separate distributed ledgers...
     button: Download PDF v1.0
     link: https://media.githubusercontent.com/media/cosmos/ics/master/papers/2020-05/build/paper.pdf
   - title: Technical Specification
     slug: technical-specification
-    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-    button: Download PDF v1.0.1
-    link: https://github.com/cosmos/ics/blob/master/spec.pdf
+    description: |
+      Download the Interblockchain Communication Protocol Specification.
+    button: Download PDF v1.0.0-rc5
+    link: https://github.com/cosmos/ics/raw/master/spec.pdf
 
 ibcImplementations:
   - badgeLabel: 1.0 Release
@@ -101,15 +101,15 @@ ibcApplications:
 guides:
   - title: How to integrate IBC into a blockchain
     slug: how-to-integrate
-    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    description: |
+      Learn how to integrate IBC to your application and send data packets to other chains.
     file: test.pdf
     button: Open Link
     link: https://docs.cosmos.network/master/ibc/integration.html
   - title: How to build an IBC application
     slug: how-to-build
-    description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    description: |
+      Learn how to configure your application to use IBC and send data packets to other chains.
     file: test.pdf
     button: Open Link
     link: https://docs.cosmos.network/master/ibc/custom.html

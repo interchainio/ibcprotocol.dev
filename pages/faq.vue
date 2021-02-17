@@ -112,7 +112,7 @@ export default {
 
   >>> ol,
   >>> ul {
-    @apply mb-3;
+    @apply my-3;
   }
 
   >>> li {

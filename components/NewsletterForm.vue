@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-dark z-40"
+    class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-theme z-40"
   >
     <div
       class="fixed top-0 left-0 m-6 uppercase cursor-pointer hover:text-red"
@@ -51,14 +51,14 @@
                   ref="email"
                   v-model="email"
                   name="fields[email]"
-                  class="bottom__form__input__input w-64"
+                  class="bottom__form__input__input w-64 bg-theme text-theme border-theme"
                   type="email"
                   placeholder="Your email"
                   required="required"
                 />
                 <button
                   type="submit"
-                  class="text-light border border-light p-3 border-l-0"
+                  class="text-theme border border-theme p-3 border-l-0"
                 >
                   OK
                 </button>
@@ -189,7 +189,7 @@ export default {
       }
 
       &__input {
-        @apply bg-dark border-light border p-3 my-2;
+        @apply border-light border p-3 my-2;
         outline: none;
         transition: color 0.15s ease-out, background 0.15s ease-out;
 

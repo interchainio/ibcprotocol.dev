@@ -79,6 +79,13 @@ relayerImplementations:
       implementer: Informal
       links: |
         <a href="https://github.com/informalsystems/ibc-rs/tree/master/relayer-cli">Source Code</a>
+  - badgeLabel: Alpha
+    badgeColor: lightGray
+    content:
+      language: TypeScript
+      implementer: Confio
+      links: |
+        <a href="https://github.com/confio/ts-relayer">Source Code</a>
 
 ibcApplications:
   - badgeLabel: 1.0 Release

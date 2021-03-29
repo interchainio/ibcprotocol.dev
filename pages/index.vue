@@ -1,13 +1,14 @@
 <template>
   <div>
-    <a
+    <!-- Uncomment to use banner -->
+    <!-- <a
       v-if="banner"
       :href="banner.link"
       class="block uppercase py-4 lg:text-xl border-b border-theme text-center relative leading-tight"
       target="_blank"
       v-html="banner.title"
     >
-    </a>
+    </a> -->
     <div>
       <div class="mx-auto px-4 md:px-12 max-w-6xl relative">
         <Logo class="md:my-12 w-full md:w-auto" />

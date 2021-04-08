@@ -106,14 +106,14 @@ relayerImplementations:
     badgeColor: lightGray
     content:
       language: Rust
-      implementer: Informal
+      implementer: <a href="https://informal.systems/">Informal Systems</a>
       links: |
         <a href="https://github.com/informalsystems/ibc-rs/tree/master/relayer-cli">Source Code</a>
   - badgeLabel: Alpha
     badgeColor: lightGray
     content:
       language: TypeScript
-      implementer: Confio
+      implementer: <a href="https://confio.tech/">Confio</a>
       links: |
         <a href="https://github.com/confio/ts-relayer">Source Code</a>
 
@@ -123,7 +123,7 @@ ibcApplications:
     content:
       application: Fungible Token Transfer
       framework: Cosmos SDK
-      implementer: Interchain GmbH
+      implementer: <a href="https://interchain.berlin">Interchain GmbH</a>
       links: |
         <a href="https://github.com/cosmos/cosmos-sdk/tree/master/x/ibc/applications/transfer">Source Code</a>,&nbsp;<a href="https://github.com/cosmos/ics/tree/master/spec/ics-020-fungible-token-transfer">Specification</a>
   - badgeLabel: Upcoming
@@ -131,7 +131,7 @@ ibcApplications:
     content:
       application: Interchain Accounts
       framework: Cosmos SDK
-      implementer: <a href="https://chainapsis.com/">Chainapsis</a>,&nbsp;<a href=""></a>
+      implementer: <a href="https://chainapsis.com/">Chainapsis</a>,&nbsp;<a href="https://interchain.berlin">Interchain GmbH</a>
       links: |
         <a href="https://github.com/chainapsis/cosmos-sdk-interchain-account">Source Code</a>,&nbsp;<a href="https://github.com/cosmos/ics/tree/master/spec/ics-027-interchain-accounts">Specification</a>
 

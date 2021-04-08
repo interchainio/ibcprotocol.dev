@@ -51,7 +51,7 @@ ibcImplementations:
       framework: EVM
       supported-light-clients: <a href="https://github.com/datachainlab/ibc-solidity/blob/main/docs/ibft2-light-client.md">IBFT 2.0</a>
       implementer: |
-        <a href="https://github.com/datachainlab">DataChain</a>
+        <a href="https://github.com/datachainlab">Datachain</a>
       links: |
         <a href="https://github.com/datachainlab/ibc-solidity">Source Code</a>
   - badgeLabel: Upcoming
@@ -61,7 +61,7 @@ ibcImplementations:
       framework: Fabric, Cosmos SDK
       supported-light-clients: <a href="https://github.com/datachainlab/fabric-ibc/tree/main/x/ibc/light-clients/xx-fabric">Fabric</a>
       implementer: |
-        <a href="https://github.com/datachainlab">DataChain</a>
+        <a href="https://github.com/datachainlab">Datachain</a>
       links: |
         <a href="https://github.com/datachainlab/fabric-ibc">Source Code</a>
   - badgeLabel: Upcoming
@@ -69,9 +69,9 @@ ibcImplementations:
     content:
       language: Kotlin
       framework: Corda
-      supported-light-clients: <a href="https://github.com/datachainlab/fabric-ibc/tree/main/x/ibc/light-clients/xx-fabric">Fabric</a>
+      supported-light-clients: <a href="https://github.com/datachainlab/corda-ibc/tree/main/go/x/ibc/light-clients/xx-corda">Corda</a>
       implementer: |
-        <a href="https://github.com/datachainlab">DataChain</a>
+        <a href="https://github.com/datachainlab">Datachain</a>
       links: |
         <a href="https://github.com/datachainlab/corda-ibc">Source Code</a>
   - badgeLabel: Upcoming

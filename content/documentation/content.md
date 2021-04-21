@@ -87,7 +87,7 @@ ibcImplementations:
     badgeColor: yellow
     content:
       language: Rust
-      framework: Codechain
+      framework: CodeChain
       supported-light-clients: <a href="https://github.com/CodeChain-io/codechain/blob/master/core/src/client/client.rs">Tendermint</a>
       implementer: |
         <a href="https://codechain.io">CodeChain</a>

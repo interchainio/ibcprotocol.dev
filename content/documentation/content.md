@@ -17,19 +17,19 @@ ibcImplementations:
   - badgeLabel: 1.0 Release
     badgeColor: green
     content:
+      language: Go
       framework: Cosmos SDK
-      language: Golang
-      supported-light-clients: Tendermint Light Client
-      implementer: Interchain GmbH, Informal Systems (auditor)
+      supported-light-clients: <a href="https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/07-tendermint">Tendermint</a>,&nbsp;<a href="https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/06-solomachine">Solo Machine</a>
+      implementer: <a href="https://interchain.berlin">Interchain GmbH</a>,&nbsp;<a href="https://informal.systems">Informal Systems</a> (auditor)
       links: |
-        <a href="https://github.com/cosmos/ics/issues/145">Issue Tracker</a>,&nbsp;<a href="https://github.com/cosmos/cosmos-sdk/pull/4548">Source</a>
-  - badgeLabel: Upcoming
-    badgeColor: yellow
+        <a href="https://github.com/cosmos/ibc">Issue Tracker</a>,&nbsp;<a href="https://github.com/cosmos/ibc-go">Source</a>
+  - badgeLabel: 1.0 Release
+    badgeColor: green
     content:
-      framework: Tendermint-rs
       language: Rust
+      framework: Framework-agnostic
       supported-light-clients: |
-        <a href="https://github.com/informalsystems/tendermint-rs">tendermint-rs</a>
+        <a href="https://github.com/informalsystems/tendermint-rs">Tendermint</a>
       implementer: |
         <a href="https://informal.systems">Informal Systems</a>
       links: |
@@ -39,7 +39,48 @@ ibcImplementations:
     content:
       framework: Codechain
       language: Rust
-      supported-light-clients: N/A
+      framework: Substrate
+      supported-light-clients: <a href="https://github.com/octopus-network/substrate-ibc/tree/master/src/grandpa">Grandpa</a>
+      implementer: |
+        <a href="https://cdot.network">cdot Network</a>
+      links: |
+        <a href="https://github.com/cdot-network/substrate-ibc">Source Code</a>
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      language: Solidity
+      framework: EVM
+      supported-light-clients: <a href="https://github.com/datachainlab/ibc-solidity/blob/main/docs/ibft2-light-client.md">IBFT 2.0</a>
+      implementer: |
+        <a href="https://github.com/datachainlab">Datachain</a>
+      links: |
+        <a href="https://github.com/datachainlab/ibc-solidity">Source Code</a>
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      language: Go
+      framework: Fabric, Cosmos SDK
+      supported-light-clients: <a href="https://github.com/datachainlab/fabric-ibc/tree/main/x/ibc/light-clients/xx-fabric">Fabric</a>
+      implementer: |
+        <a href="https://github.com/datachainlab">Datachain</a>
+      links: |
+        <a href="https://github.com/datachainlab/fabric-ibc">Source Code</a>
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      language: Kotlin
+      framework: Corda
+      supported-light-clients: <a href="https://github.com/datachainlab/corda-ibc/tree/main/go/x/ibc/light-clients/xx-corda">Corda</a>
+      implementer: |
+        <a href="https://github.com/datachainlab">Datachain</a>
+      links: |
+        <a href="https://github.com/datachainlab/corda-ibc">Source Code</a>
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      language: Rust
+      framework: CodeChain
+      supported-light-clients: <a href="https://github.com/CodeChain-io/codechain/blob/master/core/src/client/client.rs">Tendermint</a>
       implementer: |
         <a href="https://codechain.io">CodeChain</a>
       links: |
@@ -69,7 +110,7 @@ relayerImplementations:
   - badgeLabel: Alpha
     badgeColor: lightGray
     content:
-      language: Golang
+      language: Go
       implementer: Cosmos Community
       links: |
         <a href="https://github.com/cosmos/relayer">Source Code</a>
@@ -77,14 +118,14 @@ relayerImplementations:
     badgeColor: lightGray
     content:
       language: Rust
-      implementer: Informal
+      implementer: <a href="https://informal.systems/">Informal Systems</a>
       links: |
         <a href="https://github.com/informalsystems/ibc-rs/tree/master/relayer-cli">Source Code</a>
   - badgeLabel: Alpha
     badgeColor: lightGray
     content:
       language: TypeScript
-      implementer: Confio
+      implementer: <a href="https://confio.tech/">Confio</a>
       links: |
         <a href="https://github.com/confio/ts-relayer">Source Code</a>
 
@@ -94,7 +135,7 @@ ibcApplications:
     content:
       application: Fungible Token Transfer
       framework: Cosmos SDK
-      implementer: Interchain GmbH
+      implementer: <a href="https://interchain.berlin">Interchain GmbH</a>
       links: |
         <a href="https://github.com/cosmos/cosmos-sdk/tree/master/x/ibc/applications/transfer">Source Code</a>,&nbsp;<a href="https://github.com/cosmos/ics/tree/master/spec/ics-020-fungible-token-transfer">Specification</a>
   - badgeLabel: Upcoming
@@ -102,7 +143,7 @@ ibcApplications:
     content:
       application: Interchain Accounts
       framework: Cosmos SDK
-      implementer: Chainapsis
+      implementer: <a href="https://chainapsis.com/">Chainapsis</a>,&nbsp;<a href="https://interchain.berlin">Interchain GmbH</a>
       links: |
         <a href="https://github.com/chainapsis/cosmos-sdk-interchain-account">Source Code</a>,&nbsp;<a href="https://github.com/cosmos/ics/tree/master/spec/ics-027-interchain-accounts">Specification</a>
 

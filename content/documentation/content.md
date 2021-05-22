@@ -37,15 +37,6 @@ ibcImplementations:
   - badgeLabel: Upcoming
     badgeColor: yellow
     content:
-      framework: Kepler
-      language: Haskell
-      supported-light-clients: N/A
-      implementer: |
-        <a href="https://foam.space/">FOAM</a>
-      links: N/A
-  - badgeLabel: Upcoming
-    badgeColor: yellow
-    content:
       framework: Codechain
       language: Rust
       supported-light-clients: N/A
@@ -63,6 +54,16 @@ ibcImplementations:
         <a href="https://cdot.network">Cdot Network</a>
       links: |
         <a href="https://github.com/cdot-network/substrate-ibc">Source Code</a>
+- badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      framework: CosmosSwift
+      language: Swift
+      supported-light-clients: Tendermint Light-client
+      implementer: |
+        <a href="https://github.com/CosmosSwift">CosmosSwift</a>
+      links: |
+        <a href="https://github.com/CosmosSwift/swift-cosmos">Source Code</a>
 
 relayerImplementations:
   - badgeLabel: Alpha

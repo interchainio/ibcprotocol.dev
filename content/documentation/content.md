@@ -75,15 +75,15 @@ ibcImplementations:
       links: |
         <a href="https://github.com/datachainlab/corda-ibc">Source Code</a>
   - badgeLabel: Upcoming
-      badgeColor: yellow
-      content:
-        framework: CosmosSwift
-        language: Swift
-        supported-light-clients: Tendermint Light-client
-        implementer: |
-          <a href="https://github.com/CosmosSwift">CosmosSwift</a>
-        links: |
-          <a href="https://github.com/CosmosSwift/swift-cosmos">Source Code</a>
+    badgeColor: yellow
+    content:
+      framework: CosmosSwift
+      language: Swift
+      supported-light-clients: Tendermint Light-client
+      implementer: |
+        <a href="https://github.com/CosmosSwift">CosmosSwift</a>
+      links: |
+        <a href="https://github.com/CosmosSwift/swift-cosmos">Source Code</a>
   - badgeLabel: Upcoming
     badgeColor: yellow
     content:

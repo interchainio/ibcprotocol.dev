@@ -70,9 +70,9 @@
 </template>
 
 <script>
-import News from '~/components/News'
-import Organizations from '~/components/Organizations'
-import Join from '~/components/Join'
+import News from '~/components/ContentSections/News'
+import Organizations from '~/components/ContentSections/Organizations'
+import Join from '~/components/ContentSections/Join'
 
 export default {
   components: { News, Organizations, Join },

@@ -40,7 +40,7 @@
 
 <script>
 import Ticker from '~/components/Ticker'
-import LogoFooter from '~/components/LogoFooter'
+import LogoFooter from '~/components/Icons/LogoFooter'
 
 export default {
   components: { Ticker, LogoFooter },

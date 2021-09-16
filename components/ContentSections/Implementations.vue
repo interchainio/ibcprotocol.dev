@@ -1,26 +1,23 @@
 <template>
   <div class="mx-auto max-w-7xl">
     <h1 class="text-lg md:text-3xl text-center uppercase mb-24">
-      Join the community
+      Implementation Type
     </h1>
     <div
-      class="flex flex-col md:flex-row justify-center mx-auto max-w-7xl px-8 md:px-12"
+      class="flex flex-col md:flex-row justify-center items-center mx-auto max-w-7xl px-12"
     >
       <div
-        v-for="(c, index) in content.community"
+        v-for="(c, index) in content.implementations"
         :key="index"
-        class="w-full md:w-1/3 speech-bubble"
+        class="w-full speech-bubble"
         :class="{
-          'pt-16 md:pt-16': index === 1,
-          'pt-16 md:pt-32': index === 2,
+          //   'pt-16 md:pt-16': index === 1,
+          //   'pt-16 md:pt-32': index === 2,
+          //   'pt-16 md:pt-32': index === 3,
         }"
       >
         <div class="container border border-gray box-tall">
-          <a
-            :href="c.link"
-            target="_blank"
-            class="relative flex w-full justify-between"
-          >
+          <a :href="c.link" class="relative flex w-full justify-between">
             <div class="p-6">
               <div class="uppercase leading-tight mb-8 text-xl">
                 {{ c.title }}
@@ -37,36 +34,13 @@
           </a>
         </div>
       </div>
-      <div class="w-full md:w-1/3 speech-bubble pt-16 md:pt-32">
-        <div
-          class="container border border-gray box-tall relative cursor-pointer"
-        >
-          <div class="p-6 hover:text-red" @click="showForm = true">
-            <div class="uppercase leading-tight mb-8 text-xl">Get Updates</div>
-            <div class="f-serif">Sign up to the newsletter</div>
-          </div>
-          <div class="absolute top-0 right-0">
-            <span
-              class="box-link w-16 h-16 flex justify-center items-center bg-contrast"
-            >
-              <Arrow />
-            </span>
-          </div>
-        </div>
-      </div>
+      <div class="w-full md:w-1/3 speech-bubble pt-16 md:pt-32"></div>
     </div>
-    <transition name="fade">
-      <NewsletterForm v-if="showForm" @close="showForm = false" />
-    </transition>
   </div>
 </template>
 
 <script>
-import NewsletterForm from '~/components/NewsletterForm'
-
 export default {
-  components: { NewsletterForm },
-
   props: {
     content: {
       type: Object,

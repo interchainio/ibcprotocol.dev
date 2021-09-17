@@ -2,11 +2,12 @@
   <div class="mx-auto px-4 md:px-12 max-w-6xl relative">
     <img class="ml-auto mt-12" src="~/assets/images/illu-5.svg" />
 
-    <OverviewPaper class="mx-auto px-8 md:px-12 max-w-6xl relative" />
+    <Overview-Paper class="mx-auto px-8 md:px-12 max-w-6xl relative" />
   </div>
 </template>
 
 <script>
+import OverviewPaper from '~/components/ContentSections/'
 export default {
   components: { OverviewPaper },
 }

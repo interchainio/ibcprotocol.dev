@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import OverviewPaper from '~/components/ContentSections/'
+import OverviewPaper from '~/components/ContentSections/OverviewPaper'
 export default {
   components: { OverviewPaper },
 }

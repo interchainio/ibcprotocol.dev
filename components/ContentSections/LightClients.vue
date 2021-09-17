@@ -1,6 +1,6 @@
 <template>
   <div class="mt-32">
-    <h1 class="text-lg md:text-3xl uppercase mb-4">LightClients</h1>
+    <h1 class="text-lg md:text-3xl uppercase mb-4">Light Clients</h1>
     <ul class="flex flex-wrap">
       <li
         v-for="(article, index) in articles"

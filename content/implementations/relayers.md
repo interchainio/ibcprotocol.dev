@@ -7,9 +7,9 @@ public:
   - title: Hermes
     slug: Hermes
     description: |
-    Rust implementation of an IBC relayer suitable for both individual users as well as larger scale deployments
+      Rust implementation of an IBC relayer suitable for both individual users as well as larger scale deployments.
   - title: Typescript
     slug: Typescript
     description: |
-    Typescript implementation of an IBC relayer suitable for individual users as well as in-browser use cases. NOTE: this repo is currently only being maintained but new developments are on pause. Please verify if the IBC features you need are available for this relayer.
+      Typescript implementation of an IBC relayer suitable for individual users as well as in-browser use cases. NOTE: this repo is currently only being maintained but new developments are on pause. Please verify if the IBC features you need are available for this relayer.
 ---

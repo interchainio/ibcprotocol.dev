@@ -10,5 +10,10 @@
 import OverviewPaper from '~/components/ContentSections/OverviewPaper'
 export default {
   components: { OverviewPaper },
+  async asyncData({ $content }) {
+    const page = await $content('overviewPaper/content').fetch()
+
+    return { page }
+  },
 }
 </script>

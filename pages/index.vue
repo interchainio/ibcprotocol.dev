@@ -26,7 +26,15 @@
             </div>
           </h1>
           <img
-            class="absolute right-0 top-0 opacity-25 mt-48 md:mt-32 md:opacity-100"
+            class="
+              absolute
+              right-0
+              top-0
+              opacity-25
+              mt-48
+              md:mt-32
+              md:opacity-100
+            "
             src="~/assets/images/illu-1.svg"
           />
         </div>
@@ -50,8 +58,6 @@
         </div>
       </div>
     </div>
-
-    <News :articles="news" class="mx-auto px-8 md:px-12 max-w-6xl relative" />
 
     <div class="mx-auto px-8 md:px-12 max-w-6xl relative mt-16">
       <img src="~/assets/images/illu-2.svg" class="w-full" />

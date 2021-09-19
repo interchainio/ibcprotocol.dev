@@ -4,14 +4,6 @@ resources:
     slug: overview-paper
     description: |
       The interblockchain communication protocol (IBC) is an end-to-end, connection-oriented, stateful protocol for reliable, ordered, and authenticated communication between modules on separate distributed ledgers...
-    button: Download PDF v1.0
-    link: https://github.com/cosmos/ibc/raw/old/papers/2020-05/build/paper.pdf
-  - title: Technical Specification
-    slug: technical-specification
-    description: |
-      Download the Interblockchain Communication Protocol Specification.
-    button: Download PDF v1.0.0-rc5
-    link: https://github.com/cosmos/ibc/raw/old/spec.pdf
 
 ibcImplementations:
   - badgeLabel: 1.0 Release

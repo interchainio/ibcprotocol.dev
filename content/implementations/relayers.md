@@ -3,13 +3,13 @@ public:
   - title: Golang
     slug: Golang
     description: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Golang implementation of an IBC relayer meant for users wanting to relay packets/data between sets of IBC-enabled chains. NOTE: this is repo is in active development so versions may be unstable.
   - title: Hermes
     slug: Hermes
     description: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Rust implementation of an IBC relayer suitable for both individual users as well as larger scale deployments
   - title: Typescript
     slug: Typescript
     description: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Typescript implementation of an IBC relayer suitable for individual users as well as in-browser use cases. NOTE: this repo is currently only being maintained but new developments are on pause. Please verify if the IBC features you need are available for this relayer.
 ---

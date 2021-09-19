@@ -5,7 +5,7 @@ implementations:
   subtitle: 
   link: /protocol
   icon: 
-- title: LightClients
+- title: Light Clients
   subtitle: 
   link: /lightClients
   icon: 

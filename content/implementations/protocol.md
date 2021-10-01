@@ -15,7 +15,7 @@ public:
       framework: Framework-agnostic
       implementer: <a href="https://informal.systems">Informal Systems</a>
       links: <a href="https://github.com/informalsystems/ibc-rs">source code</a>
-  - badgeLabel: Stable Release
+  - badgeLabel: In Development
     badgeColor: green
     content:
       language: Solidity

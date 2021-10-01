@@ -27,8 +27,8 @@ public:
         <a href="https://interchain.berlin">Interchain GmbH</a>
       links: |
         <a href="https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/06-solomachine">source code</a>
-  - badgeLabel: Upcoming
-    badgeColor: yellow
+  - badgeLabel: In Development 
+    badgeColor: green
     content:
       Light Client: tm-solidity (EVM chains)
       Language: Solidity
@@ -36,8 +36,8 @@ public:
         <a href="https://github.com/ChorusOne/celo-cosmos-bridge">Chorus One</a>
       links: |
         repo to be updated
-  - badgeLabel: Upcoming
-    badgeColor: yellow
+  - badgeLabel: In Development
+    badgeColor: green
     content:
       Light Client: GRANDPA (Substrate)
       Language: Rust
@@ -45,8 +45,8 @@ public:
         <a href="https://oct.network/">Octopus Network</a>
       links: |
         <a href="https://github.com/octopus-network/beefy-light-client">Source Code</a>
-  - badgeLabel: Upcoming
-    badgeColor: yellow
+  - badgeLabel: In development
+    badgeColor: green
     content:
       Light Client: IBFT (Celo)
       Language: via WASM LC environment
@@ -54,8 +54,8 @@ public:
         <a href="https://github.com/ChorusOne/celo-cosmos-bridge">Chorus One</a>
       links: |
         <a href="https://github.com/ChorusOne/celo-light-client">Source Code</a>
-  - badgeLabel: Upcoming
-    badgeColor: yellow
+  - badgeLabel: In development
+    badgeColor: green
     content:
       Light Client: WASM LC dev environment
       Language: Go

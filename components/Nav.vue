@@ -7,7 +7,7 @@
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
           <NuxtLink to="/implementations" class="inline-flex">
-            Implementations
+            Implementations & Docs
             <svg
               class="-mr-1 ml-2 h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
@@ -23,53 +23,13 @@
             </svg>
           </NuxtLink>
 
-          <!-- Create Toggle for Implementations Menu START -->
-          <!--
-          <div
-            class="nav origin-top-left absolute left-0 mt-6 ml-32 w-56 border border-red-200 ring-1 ring-black ring-opacity-5 focus:outline-none"
-            role="menu"
-            aria-orientation="vertical"
-            aria-labelledby="menu-button"
-            tabindex="-1"
-          >
-            <div class="py-1" role="none">
-              <NuxtLink
-                id="menu-item-0"
-                to="/protocol"
-                href="#"
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-              >
-                Protocol
-              </NuxtLink>
-              <NuxtLink
-                id="menu-item-1"
-                to="/lightClients"
-                href="#"
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-              >
-                Light Clients
-              </NuxtLink>
-              <NuxtLink
-                id="menu-item-2"
-                to="/relayers"
-                href="#"
-                class="text-gray-700 block px-4 py-2 text-sm"
-                role="menuitem"
-                tabindex="-1"
-              >
-                Relayers
-              </NuxtLink>
-            </div>
-          </div>
-          -->
-          <!-- Implementations Menu END -->
+          <!-- TODO: dropdown from implementation menu -->
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
-          <NuxtLink to="/documentation">Protocol Documentation</NuxtLink>
+          <NuxtLink to="/documentation">Protocol Specs</NuxtLink>
+        </li>
+        <li class="hidden md:inline-block mx-8 py-6">
+          <NuxtLink to="/tutorials">Tutorials</NuxtLink>
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
           <NuxtLink to="/community">Community</NuxtLink>

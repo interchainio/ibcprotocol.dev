@@ -30,7 +30,7 @@
               <div class="uppercase leading-tight mb-8 text-xl">
                 {{ c.title }}
               </div>
-              <div class="f-serif">{{ c.subtitle }}</div>
+              <div>{{ c.subtitle }}</div>
             </div>
             <div>
               <span
@@ -59,7 +59,7 @@
             <div class="uppercase leading-tight mb-8 text-xl">
               Ecosystem Updates
             </div>
-            <div class="f-serif">Sign up to the newsletter</div>
+            <div>Sign up to the newsletter</div>
           </div>
           <div class="absolute top-0 right-0">
             <span

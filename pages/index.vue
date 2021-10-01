@@ -31,7 +31,7 @@
         </div>
 
         <nuxt-content
-          class="max-w-2xl leading-relaxed f-serif text-md md:text-xl"
+          class="max-w-2xl leading-relaxed text-md md:text-xl"
           :document="page"
         />
         <div class="flex flex-col my-16 md:flex-row"></div>
@@ -55,19 +55,16 @@
 </template>
 
 <script>
-// import Organizations from '~/components/ContentSections/Organizations'
 import Join from '~/components/ContentSections/Join'
 
 export default {
   components: {
-    // Organizations,
     Join,
   },
 
   async asyncData({ $content }) {
     const banner = await $content('index/banner').fetch()
     const page = await $content('index/intro').fetch()
-    const organizations = await $content('index/organizations').fetch()
     const community = await $content('community/content').fetch()
 
     const news = await $content('news')
@@ -76,7 +73,7 @@ export default {
       .sortBy('date', 'desc')
       .fetch()
 
-    return { banner, page, news, community, organizations }
+    return { banner, page, news, community }
   },
 }
 </script>

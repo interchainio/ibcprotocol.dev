@@ -12,7 +12,7 @@
         >
           <Title-Line :index="index" />
           <h2 class="text-lg md:text-2xl mb-3">{{ item.title }}</h2>
-          <p v-if="item.description" class="f-serif">{{ item.description }}</p>
+          <p v-if="item.description">{{ item.description }}</p>
           <a :href="item.link"
             ><span class="badge text-base inline-block mt-6 bg-light text-dark">
               {{ item.button }}

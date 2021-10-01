@@ -1,7 +1,7 @@
 ---
 implementations:
 
-- title: Protocol
+- title: Core Logic 
   subtitle: 
   link: /protocol
   icon: 

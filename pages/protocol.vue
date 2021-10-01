@@ -2,7 +2,7 @@
   <div class="max-w-6xl mx-auto px-4 md:px-8">
     <div class="flex flex-col my-16 md:flex-row"></div>
     <div class="-mt-16 md:-mt-32">
-      <h3 class="heading-sm mb-6">Core Logic</h3>
+      <h3 class="heading-sm mb-6">connection and packet infrastructure</h3>
       IBC handles the creation of a handshake based connection and the
       authentication, transport, and ordering (TAO) of opaque data packets
       relayed between modules on separate ledgers. Ledgers can be run on solo

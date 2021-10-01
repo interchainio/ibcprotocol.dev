@@ -1,12 +1,12 @@
 @font-face {
     font-family:"CMU-UI";
-    src:url("../fonts/cmunss.woff") format("woff"),url("../fonts/cmunui.woff") format("woff"),url("../fonts/cmunui.ttf") format("truetype");
+    src:url("../fonts/cmunrm.woff") format("woff"),url("../fonts/cmunui.woff") format("woff"),url("../fonts/cmunui.ttf") format("truetype");
     font-style:normal;font-weight:400;
 }
 
 @font-face {
     font-family:"CMU-Sans-Serif";
-    src:url("../fonts/cmunss.woff") format("woff"),url("../fonts/cmunrm.woff") format("woff"),url("../fonts/cmunrm.ttf") format("truetype");
+    src:url("../fonts/cmunrm.woff") format("woff"),url("../fonts/cmunrm.woff") format("woff"),url("../fonts/cmunrm.ttf") format("truetype");
     font-style:normal;font-weight:400;
 }
 
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family:"CMU-Sans-Serif";
-    src:url("../fonts/cmunss.woff") format("woff"),url("../fonts/cmunbx.woff") format("woff"),url("../fonts/cmunbx.ttf") format("truetype");
+    src:url("../fonts/cmunbx.woff2") format("woff2"),url("../fonts/cmunbx.woff") format("woff"),url("../fonts/cmunbx.ttf") format("truetype");
     font-style:normal;font-weight:600;
 }
 

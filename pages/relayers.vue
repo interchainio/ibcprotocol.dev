@@ -1,8 +1,8 @@
 <template>
   <div class="max-w-6xl mx-auto px-4 md:px-8">
-    <img class="ml-auto" src="~/assets/images/illu-4.svg" />
+    <div class="flex flex-col my-16 md:flex-row"></div>
+    <div class="flex flex-col my-16 md:flex-row"></div>
     <div class="-mt-16 md:-mt-32">
-      <h1 class="heading-sm mb-6">Relayers</h1>
       <div class="flex flex-wrap">
         <div
           v-for="(item, index) in page.public"
@@ -11,7 +11,13 @@
           :class="{ 'opacity-25': item.value === null }"
         >
           <Title-Line :index="index" />
-          <h2 class="text-lg md:text-2xl mb-3">{{ item.title }}</h2>
+          <a
+            :href="item.link"
+            target="_blank"
+            class="relative flex w-full justify-between"
+          >
+            <h2 class="text-lg md:text-2xl mb-3">{{ item.title }}</h2>
+          </a>
           <p v-if="item.description" class="f-serif">{{ item.description }}</p>
           <br />
           <br />

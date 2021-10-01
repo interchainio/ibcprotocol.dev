@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="mx-auto px-8 md:px-12 max-w-6xl relative py-24">
-      <img src="~/assets/images/illu-3.svg" class="w-full" />
-    </div>
-
+    <div class="flex flex-col my-16 md:flex-row"></div>
     <div class="mx-auto max-w-6xl relative">
       <Join :content="community" />
+    </div>
+    <div class="mx-auto px-8 md:px-12 max-w-6xl relative py-24">
+      <img src="~/assets/images/illu-3.svg" class="w-full" />
     </div>
   </div>
 </template>

@@ -1,10 +1,15 @@
 <template>
   <div class="mx-auto max-w-7xl">
-    <h1 class="text-lg md:text-3xl text-center uppercase mb-24">
-      Implementation Type
-    </h1>
     <div
-      class="flex flex-col md:flex-row justify-center items-center mx-auto max-w-7xl px-12"
+      class="
+        flex flex-col
+        md:flex-row
+        justify-center
+        items-center
+        mx-auto
+        max-w-7xl
+        px-12
+      "
     >
       <div
         v-for="(c, index) in content.implementations"
@@ -26,7 +31,15 @@
             </div>
             <div>
               <span
-                class="box-link w-16 h-16 flex justify-center items-center bg-contrast"
+                class="
+                  box-link
+                  w-16
+                  h-16
+                  flex
+                  justify-center
+                  items-center
+                  bg-contrast
+                "
               >
                 <Arrow />
               </span>

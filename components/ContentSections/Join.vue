@@ -1,10 +1,15 @@
 <template>
   <div class="mx-auto max-w-7xl">
-    <h1 class="text-lg md:text-3xl text-center uppercase mb-24">
-      Join the community
-    </h1>
     <div
-      class="flex flex-col md:flex-row justify-center mx-auto max-w-7xl px-8 md:px-12"
+      class="
+        flex flex-col
+        md:flex-row
+        justify-center
+        mx-auto
+        max-w-7xl
+        px-8
+        md:px-12
+      "
     >
       <div
         v-for="(c, index) in content.community"
@@ -29,7 +34,15 @@
             </div>
             <div>
               <span
-                class="box-link w-16 h-16 flex justify-center items-center bg-contrast"
+                class="
+                  box-link
+                  w-16
+                  h-16
+                  flex
+                  justify-center
+                  items-center
+                  bg-contrast
+                "
               >
                 <Arrow />
                 <!-- <img :src="c.icon" class="w-2/3" /> -->
@@ -43,12 +56,22 @@
           class="container border border-gray box-tall relative cursor-pointer"
         >
           <div class="p-6 hover:text-red" @click="showForm = true">
-            <div class="uppercase leading-tight mb-8 text-xl">Get Updates</div>
+            <div class="uppercase leading-tight mb-8 text-xl">
+              Ecosystem Updates
+            </div>
             <div class="f-serif">Sign up to the newsletter</div>
           </div>
           <div class="absolute top-0 right-0">
             <span
-              class="box-link w-16 h-16 flex justify-center items-center bg-contrast"
+              class="
+                box-link
+                w-16
+                h-16
+                flex
+                justify-center
+                items-center
+                bg-contrast
+              "
             >
               <Arrow />
             </span>

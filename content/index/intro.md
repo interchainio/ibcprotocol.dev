@@ -2,8 +2,8 @@
 title: Introduction
 ---
 
-The inter-blockchain communication protocol (IBC) is an interoperability protocol for communicating arbitrary data between arbitrary state machines.
+IBC is an interoperability protocol for communicating arbitrary data between arbitrary state machines.
 
-It provides an end-to-end, connection-oriented, stateful protocol for reliable, ordered, and authenticated communication between heterogeneous blockchains arranged in an unknown and dynamic topology. 
+It provides an end-to-end, connection-oriented, stateful protocol for reliable, ordered, and authenticated communication between heterogeneous blockchains or off-chain protocols (rollups), and can accomodate for both known and dynamic validator topologies.
 
-IBC can be used to build a wide range of cross-chain applications, which include token transfers, atomic swaps, multi-chain smart contracts (with or without mutually comprehensible VMs), and data & code sharding of various kinds.
+IBC can be used to build a wide range of cross-chain applications, including but not limited to token transfers, interchain accounts (delegate calls between two chains), non-fungible token transfers and oracle data feeds.

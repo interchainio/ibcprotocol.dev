@@ -10,11 +10,10 @@
 <script>
 import Nav from '~/components/Nav'
 import Ticker from '~/components/Ticker'
-import Footer from '~/components/Footer'
 
 export default {
   name: 'Default',
-  components: { Nav, Ticker, Footer },
+  components: { Nav, Ticker },
   data() {
     return {
       darkMode:

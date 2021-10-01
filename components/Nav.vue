@@ -69,24 +69,14 @@
           <!-- Implementations Menu END -->
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
-          <NuxtLink to="/overviewPaper">Overview Paper</NuxtLink>
-        </li>
-        <li class="hidden md:inline-block mx-8 py-6">
-          <a href="https://github.com/cosmos/ibc" target="_blank"
-            >Specifications</a
-          >
+          <NuxtLink to="/documentation">Protocol Documentation</NuxtLink>
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
           <NuxtLink to="/community">Community</NuxtLink>
         </li>
-        <!--
-        <li class="hidden md:inline-block mx-8 py-6">
-          <NuxtLink to="/documentation">Documentation</NuxtLink>
-        </li>
-        <li class="hidden md:inline-block mx-8 py-6">
+        <!-- <li class="hidden md:inline-block mx-8 py-6">
           <NuxtLink to="/faq">FAQ</NuxtLink>
-        </li>
-        -->
+        </li> -->
       </ul>
       <div class="flex items-center">
         <svg
@@ -118,7 +108,17 @@
       <transition name="fade">
         <div
           v-if="showMenu"
-          class="bg-theme text-theme absolute border-t top-0 left-0 w-screen h-screen z-40"
+          class="
+            bg-theme
+            text-theme
+            absolute
+            border-t
+            top-0
+            left-0
+            w-screen
+            h-screen
+            z-40
+          "
         >
           <ul class="p-6">
             <li class="mb-3">
@@ -135,9 +135,10 @@
             <li class="mb-3">
               <NuxtLink to="/community">Community</NuxtLink>
             </li>
+            <li class="mb-3"></li>
             <!--
             <li class="mb-3">
-              <NuxtLink to="/documentation">Documentation</NuxtLink>
+              <NuxtLink to="/tutorials">Tutorials</NuxtLink>
             </li>
             <li class="mb-3">
               <NuxtLink to="/faq">FAQ</NuxtLink>

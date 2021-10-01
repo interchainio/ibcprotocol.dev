@@ -14,7 +14,19 @@
     <transition name="fade">
       <div
         v-if="showTOC"
-        class="hidden lg:block toc fixed right-0 bottom-0 mb-8 mr-8 text-sm uppercase w-56"
+        class="
+          hidden
+          lg:block
+          toc
+          fixed
+          right-0
+          bottom-0
+          mb-8
+          mr-8
+          text-sm
+          uppercase
+          w-56
+        "
       >
         <ul>
           <li

@@ -1,9 +1,7 @@
 <template>
   <div class="max-w-6xl mx-auto px-4 md:px-8">
-    <img class="ml-auto" src="~/assets/images/illu-4.svg" />
+    <div class="flex flex-col my-16 md:flex-row"></div>
     <div class="-mt-16 md:-mt-32">
-      <h1 class="heading-sm mb-6">Protocol</h1>
-
       <h3 class="heading-sm mb-6">Public</h3>
       <div class="flex flex-wrap">
         <div

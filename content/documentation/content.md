@@ -3,7 +3,15 @@ resources:
   - title: Overview Paper
     slug: overview-paper
     description: |
-      The interblockchain communication protocol (IBC) is an end-to-end, connection-oriented, stateful protocol for reliable, ordered, and authenticated communication between modules on separate distributed ledgers...
+      This document is a higher level overview of the design and implementation specs of IBC.
+    button: Download PDF v1.0
+    link: https://github.com/cosmos/ibc/raw/old/papers/2020-05/build/paper.pdf
+  - title: Specs
+    slug: technical-specification
+    description: |
+      This link will take you to the IBC technical specifications
+    button: Go to GitHub repo
+    link: https://github.com/cosmos/ibc
 
 ibcImplementations:
   - badgeLabel: 1.0 Release
@@ -33,9 +41,9 @@ ibcImplementations:
       framework: Substrate
       supported-light-clients: <a href="https://github.com/octopus-network/substrate-ibc/tree/master/src/grandpa">Grandpa</a>
       implementer: |
-        <a href="https://cdot.network">cdot Network</a>
+        <a href="https://oct.network/">Octopus Network</a>
       links: |
-        <a href="https://github.com/cdot-network/substrate-ibc">Source Code</a>
+        <a href="https://github.com/octopus-network/substrate-ibc">Source Code</a>
   - badgeLabel: Upcoming
     badgeColor: yellow
     content:

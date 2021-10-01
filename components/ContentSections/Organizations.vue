@@ -14,7 +14,17 @@
           :class="{ 'organization-borders': hasBorders(index) }"
         >
           <a
-            class="text-lg md:text-2xl w-full h-full flex justify-center items-center text-center p-4"
+            class="
+              text-lg
+              md:text-2xl
+              w-full
+              h-full
+              flex
+              justify-center
+              items-center
+              text-center
+              p-4
+            "
             target="_blank"
             :href="organization.link"
             >{{ organization.name }}</a
@@ -60,7 +70,6 @@ export default {
 .organization {
   @apply border-b;
   height: 220px;
-
   &:nth-child(2n) {
     @apply border-l;
   }

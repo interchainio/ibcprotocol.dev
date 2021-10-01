@@ -1,15 +1,36 @@
 ---
 public:
-  - title: IBC-go
-    slug: IBC-go
-    description: Golang implementation built as a Cosmos SDK module.
-  - title: IBC-rs
-    slug: IBC-rs
-    description: |
-      Rust implementation comprising of primarily four crates defining the main data structures and on-chain logic for the IBC protocol, an implementation of an IBC relayer with CLI, a library with Rust types generated from .proto definitions necessary for interacting with Cosmos SDK and its IBC structs, and a library for use in the hermes CLI, for gathering telemetry data and exposing that in a Prometheus endpoint.
-  - title: Solidity
-    slug: Solidity
-    description: Solidity implementation of IBC core logic (IBC handlers)
+  - badgeLabel: Stable Release
+    badgeColor: green
+    content:
+      language: Go
+      framework: Cosmos SDK
+      supported-light-clients: <a href="https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/07-tendermint">Tendermint</a>,&nbsp;<a href="https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/06-solomachine">Solo Machine</a>
+      implementer: <a href="https://interchain.berlin">Interchain GmbH</a>,&nbsp;<a href="https://informal.systems">Informal Systems</a> (auditor)
+      links: |
+        <a href="https://github.com/cosmos/ibc">Issue Tracker</a>,&nbsp;<a href="https://github.com/cosmos/ibc-go">Source</a>>
+  - badgeLabel: Stable Release
+    badgeColor: green
+    content:
+      language: Rust
+      framework: Framework-agnostic
+    Supported-light-clients: |
+        <a href="https://github.com/informalsystems/tendermint-rs">tendermint-rs</a>
+    implementer: |
+        <a href="https://informal.systems">Informal Systems</a>
+    links: |
+        <a href="https://github.com/informalsystems/ibc-rs">Source Code</a
+  - badgeLabel: Upcoming
+    badgeColor: yellow
+    content:
+      language: Solidity
+      framework: Framework-agnostic
+    Supported-light-clients: |
+        <a href="https://github.com/ChorusOne/celo-light-client">IBFT</a>, Fabric (WIP), Corda (WIP)
+    implementer: |
+        <a href="https://github.com/datachainlab">Datachain</a>
+    links: |
+        <a href="https://github.com/datachainlab/yui-ibc-solidity">Source</a
 enterprise:
   - title: TIBC
     slug: TIBC

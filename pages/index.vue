@@ -42,7 +42,7 @@
       <img src="~/assets/images/illu-2.svg" class="w-full" />
     </div>
 
-    <Organizations :content="organizations" />
+    <!-- <Organizations :content="organizations" /> -->
 
     <div class="relative max-w-6xl px-8 py-24 mx-auto md:px-12">
       <img src="~/assets/images/illu-3.svg" class="w-full" />
@@ -55,11 +55,14 @@
 </template>
 
 <script>
-import Organizations from '~/components/ContentSections/Organizations'
+// import Organizations from '~/components/ContentSections/Organizations'
 import Join from '~/components/ContentSections/Join'
 
 export default {
-  components: { Organizations, Join },
+  components: {
+    // Organizations,
+    Join,
+  },
 
   async asyncData({ $content }) {
     const banner = await $content('index/banner').fetch()

@@ -39,8 +39,19 @@
     </div>
 
     <div class="relative max-w-6xl px-8 mx-auto mt-16 md:px-12">
+      <div class="mx-auto px-8 md:px-12 text-center leading-tight">
+        <h1 class="text-lg md:text-3xl uppercase mb-5">
+          How IBC packets are sent
+        </h1>
+      </div>
+      <img src="~/assets/images/IBCgraphic.png" class="w-full" />
+    </div>
+
+    <!--
+    <div class="relative max-w-6xl px-8 mx-auto mt-16 md:px-12">
       <img src="~/assets/images/illu-2.svg" class="w-full" />
     </div>
+    -->
 
     <Organizations :content="organizations" />
 

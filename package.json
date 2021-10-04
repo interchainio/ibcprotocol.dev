@@ -16,6 +16,7 @@
     "lodash": "^4.17.20",
     "nuxt": "^2.14.6",
     "vue-marquee-text-component": "^1.2.0",
+    "vue-pdf": "^4.3.0",
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {

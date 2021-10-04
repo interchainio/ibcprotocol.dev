@@ -27,6 +27,7 @@
 
 <script>
 import TitleLine from '~/components/TitleLine'
+
 export default {
   components: { TitleLine },
   async asyncData({ $content }) {

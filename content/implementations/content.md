@@ -1,9 +1,13 @@
 ---
 implementations:
 
-- title: Protocol
+- title: Core Logic 
   subtitle: 
   link: /protocol
+  icon: 
+- title: IBC Applications
+  subtitle:
+  link: /applications
   icon: 
 - title: Light Clients
   subtitle: 
@@ -12,5 +16,5 @@ implementations:
 - title: Relayers
   subtitle:
   link: /relayers
-  icon: 
+  icon:
 ---

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full md:w-1/2 f-serif md:px-4 md:mb-3">
+  <div class="relative w-full md:w-1/2 md:px-4 md:mb-3">
     <div
       class="
         flex flex-col

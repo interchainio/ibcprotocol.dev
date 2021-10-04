@@ -1,6 +1,17 @@
 <template>
   <div
-    class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-theme z-40"
+    class="
+      fixed
+      top-0
+      left-0
+      right-0
+      bottom-0
+      flex
+      items-center
+      justify-center
+      bg-theme
+      z-40
+    "
   >
     <div
       class="fixed top-0 left-0 m-6 uppercase cursor-pointer hover:text-red"
@@ -51,7 +62,13 @@
                   ref="email"
                   v-model="email"
                   name="fields[email]"
-                  class="bottom__form__input__input w-64 bg-theme text-theme border-theme"
+                  class="
+                    bottom__form__input__input
+                    w-64
+                    bg-theme
+                    text-theme
+                    border-theme
+                  "
                   type="email"
                   placeholder="Your email"
                   required="required"

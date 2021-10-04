@@ -6,10 +6,33 @@
           <NuxtLink id="logo-nav" to="/"><span>IBC</span></NuxtLink>
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
-          <NuxtLink to="/documentation">Documentation</NuxtLink>
+          <NuxtLink to="/implementations" class="inline-flex">
+            Implementations & Docs
+            <svg
+              class="-mr-1 ml-2 h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </NuxtLink>
+
+          <!-- TODO: dropdown from implementation menu -->
         </li>
-        <li class="hidden md:inline-block py-6">
-          <NuxtLink to="/faq">FAQ</NuxtLink>
+        <li class="hidden md:inline-block mx-8 py-6">
+          <NuxtLink to="/documentation">Protocol Specs</NuxtLink>
+        </li>
+        <li class="hidden md:inline-block mx-8 py-6">
+          <NuxtLink to="/tutorials">Tutorials</NuxtLink>
+        </li>
+        <li class="hidden md:inline-block mx-8 py-6">
+          <NuxtLink to="/community">Community</NuxtLink>
         </li>
       </ul>
       <div class="flex items-center">
@@ -37,23 +60,6 @@
           <Close v-else class="cursor-pointer" />
         </div>
       </div>
-    </div>
-    <div class="relative">
-      <transition name="fade">
-        <div
-          v-if="showMenu"
-          class="bg-theme text-theme absolute border-t top-0 left-0 w-screen h-screen z-40"
-        >
-          <ul class="p-6">
-            <li class="mb-3">
-              <NuxtLink to="/documentation">Documentation</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/faq">FAQ</NuxtLink>
-            </li>
-          </ul>
-        </div>
-      </transition>
     </div>
   </div>
 </template>

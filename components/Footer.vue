@@ -2,48 +2,32 @@
   <div>
     <div class="mx-auto w-full flex justify-center">
       <div
-        class="flex justify-center items-center overflow-visible w-0 h-0 flipped"
+        class="
+          flex
+          justify-center
+          items-center
+          overflow-visible
+          w-0
+          h-0
+          flipped
+        "
       >
         <div class="w-screen border-t border-b border-gray">
           <Ticker />
         </div>
       </div>
-    </div>
-    <div class="flex flex-col md:flex-row justify-between md:items-end pt-8">
-      <LogoFooter class="p-8 md:p-12 w-full sm:w-2/3 md:w-1/3 xl:w-1/2" />
       <div
-        class="p-4 md:p-8 md:p-12 uppercase text-xs md:text-sm md:text-right leading-loose"
-      >
-        <div>INTER-BLOCKCHAIN COMMUNICATION</div>
-        <div>
-          <span class="mx-2"
-            ><NuxtLink to="/documentation">Documentation</NuxtLink></span
-          >
-          <span class="mr-2"><NuxtLink to="/faq">faq</NuxtLink></span>
-          <span class="mr-2"
-            ><a
-              href="https://forum.cosmos.network/t/welcome-to-cosmos-forum-read-this-to-get-started/29"
-              target="_blank"
-              >forum</a
-            ></span
-          >
-          <span
-            ><a href="https://discord.gg/vcExX9T" target="_blank"
-              >discord</a
-            ></span
-          >
-        </div>
-      </div>
+        class="flex flex-col md:flex-row justify-between md:items-end pt-8"
+      ></div>
     </div>
   </div>
 </template>
 
 <script>
 import Ticker from '~/components/Ticker'
-import LogoFooter from '~/components/LogoFooter'
 
 export default {
-  components: { Ticker, LogoFooter },
+  components: { Ticker },
 
   computed: {
     tickerText() {

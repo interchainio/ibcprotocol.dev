@@ -89,7 +89,7 @@ enterprise:
       implementer: |
         <a href="https://github.com/datachainlab">Datachain</a>
       links: |
-        <a href="https://github.com/datachainlab/fabric-cosmos-ibc-demo">source code</a>
+        <a href="https://github.com/hyperledger-labs/yui-fabric-ibc">source code</a>
   - badgeLabel: Upcoming
     badgeColor: yellow
     content:

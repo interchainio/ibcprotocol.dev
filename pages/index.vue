@@ -1,14 +1,5 @@
 <template>
   <div>
-    <!-- Uncomment to use banner -->
-    <!-- <a
-      v-if="banner"
-      :href="banner.link"
-      class="relative block py-4 leading-tight text-center uppercase border-b lg:text-xl border-theme"
-      target="_blank"
-      v-html="banner.title"
-    >
-    </a> -->
     <div>
       <div class="relative max-w-6xl px-4 mx-auto md:px-12">
         <Logo class="w-full md:my-12 md:w-auto" />
@@ -24,37 +15,27 @@
             </div>
           </h1>
           <!-- prettier-ignore-attribute -->
-          <img
+          <!-- <img
             src="~/assets/images/illu-1.svg"
             class="absolute top-0 right-0 mt-48 opacity-25  md:mt-32 md:opacity-100"
-          />
+          /> -->
         </div>
 
         <nuxt-content
           class="max-w-2xl leading-relaxed text-md md:text-xl"
           :document="page"
         />
-        <div class="flex flex-col my-16 md:flex-row"></div>
       </div>
     </div>
-
     <div class="relative max-w-6xl px-8 mx-auto mt-16 md:px-12">
-      <div class="mx-auto px-8 md:px-12 text-center leading-tight">
-        <h1 class="text-lg md:text-3xl uppercase mb-5">
-          How IBC packets are sent
-        </h1>
-      </div>
+      <div class="flex flex-col my-16 md:flex-row"></div>
+      <h1 class="mb-16 heading mb:mb-32">
+        <div class="inline-block leading-normal text-gradient">
+          IBC Packet Lifecycle
+        </div>
+      </h1>
       <img src="~/assets/images/IBCgraphic.png" class="w-full" />
     </div>
-
-    <!--
-    <div class="relative max-w-6xl px-8 mx-auto mt-16 md:px-12">
-      <img src="~/assets/images/illu-2.svg" class="w-full" />
-    </div>
-    -->
-
-    <!-- <Organizations :content="organizations" /> -->
-
     <div class="relative max-w-6xl px-8 py-24 mx-auto md:px-12">
       <img src="~/assets/images/illu-3.svg" class="w-full" />
     </div>

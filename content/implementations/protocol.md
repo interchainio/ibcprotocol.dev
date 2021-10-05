@@ -21,7 +21,7 @@ public:
       language: Solidity
       framework: Framework-agnostic
       implementer: <a href="https://github.com/datachainlab">Datachain</a>
-      links: <a href="https://github.com/datachainlab/yui-ibc-solidity">source code</a>
+      links: <a href="https://github.com/hyperledger-labs/yui-ibc-solidity">source code</a>
 enterprise:
   - badgeLabel: Stable Release
     badgeColor: green

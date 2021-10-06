@@ -22,8 +22,6 @@
               />
             </svg>
           </NuxtLink>
-
-          <!-- TODO: dropdown from implementation menu -->
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
           <NuxtLink to="/documentation">Protocol Specs</NuxtLink>
@@ -61,11 +59,51 @@
         </div>
       </div>
     </div>
+    <div class="relative">
+      <transition name="fade">
+        <div
+          v-if="showMenu"
+          class="
+            bg-theme
+            text-theme
+            absolute
+            border-t
+            top-0
+            left-0
+            w-screen
+            h-screen
+            z-40
+          "
+        >
+          <ul class="p-6">
+            <li class="mb-3">
+              <NuxtLink to="/implementations">Implementations</NuxtLink>
+            </li>
+            <li class="mb-3">
+              <NuxtLink to="/documentation">Protocol Specs</NuxtLink>
+            </li>
+            <li class="mb-3">
+              <NuxtLink to="/tutorials">Tutorials</NuxtLink>
+            </li>
+            <li class="mb-3">
+              <NuxtLink to="/community">Community</NuxtLink>
+            </li>
+          </ul>
+        </div>
+      </transition>
+    </div>
   </div>
 </template>
 
 <script>
+import Hamburger from '~/components/Icons/Hamburger'
+import Close from '~/components/Icons/Close'
+
 export default {
+  components: {
+    Hamburger,
+    Close,
+  },
   data() {
     return {
       showMenu: false,

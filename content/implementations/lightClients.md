@@ -21,12 +21,21 @@ public:
   - badgeLabel: Stable Release
     badgeColor: green
     content:
-      Light Client: Solo Machines
+      Light Client: Solo Machine
       Language: Go
       implementers: |
         <a href="https://interchain.berlin">Interchain GmbH</a>
       links: |
         <a href="https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/06-solomachine">source code</a>
+  - badgeLabel: In Development
+    badgeColor: green
+    content:
+      Light Client: Solo Machine
+      Language: Rust
+      implementers: |
+        <a href="https://github.com/crypto-com">Crypto.com</a>
+      links: |
+        <a href="https://github.com/crypto-com/ibc-solo-machine">source code</a>
   - badgeLabel: In Development 
     badgeColor: green
     content:

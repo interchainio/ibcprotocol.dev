@@ -7,14 +7,14 @@ public:
       framework: Cosmos SDK
       implementer: <a href="https://interchain.berlin">Interchain GmbH</a>
       links: |
-        <a href="https://github.com/cosmos/ibc-go">source code</a>
-  - badgeLabel: Stable Release
+        <a href="https://github.com/cosmos/ibc-go">source code</a>, <a href="https://ibc.cosmos.network/main/ibc/overview.html"> docs</a>
+  - badgeLabel: Stable Release  
     badgeColor: green
     content:
       language: Rust
       framework: Framework-agnostic
       implementer: <a href="https://informal.systems">Informal Systems</a>
-      links: <a href="https://github.com/informalsystems/ibc-rs">source code</a>
+      links: <a href="https://github.com/informalsystems/ibc-rs">source code</a>, <a href="https://docs.rs/crate/ibc/0.7.3"> docs</a>
   - badgeLabel: In Development
     badgeColor: green
     content:

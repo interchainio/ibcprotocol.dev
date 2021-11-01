@@ -1,6 +1,5 @@
 <template>
   <div id="app" :class="{ darkmode: darkMode }">
-    <Ticker />
     <Nav />
     <Nuxt />
     <Footer class="mt-48" />
@@ -9,11 +8,10 @@
 
 <script>
 import Nav from '~/components/Nav'
-import Ticker from '~/components/Ticker'
 
 export default {
   name: 'Default',
-  components: { Nav, Ticker },
+  components: { Nav },
   data() {
     return {
       darkMode:

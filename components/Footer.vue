@@ -11,11 +11,7 @@
           h-0
           flipped
         "
-      >
-        <div class="w-screen border-t border-b border-gray">
-          <Ticker />
-        </div>
-      </div>
+      ></div>
       <div
         class="flex flex-col md:flex-row justify-between md:items-end pt-8"
       ></div>
@@ -24,20 +20,10 @@
 </template>
 
 <script>
-import Ticker from '~/components/Ticker'
-
 export default {
-  components: { Ticker },
+  components: {},
 
-  computed: {
-    tickerText() {
-      return this.$store.state.meta.ticker.text
-    },
-
-    tickerDuration() {
-      return this.$store.state.meta.ticker.duration
-    },
-  },
+  computed: {},
 }
 </script>
 

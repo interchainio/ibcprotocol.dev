@@ -3,7 +3,6 @@
     <div class="flex flex-col my-16 md:flex-row"></div>
     <div class="-mt-16 md:-mt-32">
       <h3 class="heading-sm mb-6">IBC Applications</h3>
-      Links to be updated
       <div class="flex flex-col my-5 md:flex-row"></div>
       <div class="flex flex-wrap">
         <div

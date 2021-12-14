@@ -26,8 +26,8 @@ enterprise:
   - badgeLabel: Stable Release
     badgeColor: green
     content:
-      language: Go 
-      framework: Terse IBC for consortium blockchains
+      language: Go, Solidity 
+      framework: Terse IBC for consortium/permissioned blockchains. Currently supports BSC -> OpenSea NFT transfers.
       implementer: <a href="https://github.com/bianjieai">Bianjie</a>
-      links: <a href="https://github.com/bianjieai/tibc-go">source code</a>
+      links: <a href="https://github.com/bianjieai/tibc-go">Go source code</a>, <a href="https://github.com/bianjieai/tibc-solidity">Solidity source code</a> 
 ---

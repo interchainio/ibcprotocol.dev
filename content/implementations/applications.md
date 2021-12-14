@@ -15,4 +15,7 @@ public:
   - title: Oracle Data Module (implemented by Band Protocol)
     description: this protocol allows other IBC-compatible blockchains to request data from BandChain.
     link: https://docs.bandchain.org/whitepaper/cosmos-ibc.html
+  - title: TIBC (permissioned/enterprise IBC) NFT Module (implemented by Bianjie)
+    description: this protocol allows NFT transfers between TIBC enabled blockchains
+    link: https://github.com/bianjieai/tibc/tree/master/apps/tics-030-non-fungible-token-transfer
 ---

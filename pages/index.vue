@@ -31,7 +31,7 @@
       <div class="flex flex-col my-16 md:flex-row"></div>
       <h1 class="mb-16 heading mb:mb-32">
         <div class="inline-block leading-normal text-gradient">
-          Fungible Token Packet Lifecycle
+          IBC Packet Lifecycle
         </div>
       </h1>
       <img src="~/assets/images/IBCgraphic.png" class="w-full" />

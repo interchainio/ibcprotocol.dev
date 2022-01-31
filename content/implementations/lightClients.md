@@ -48,7 +48,7 @@ public:
   - badgeLabel: In Development
     badgeColor: green
     content:
-      Light Client: GRANDPA (Substrate)
+      Light Client: BEEFY (Substrate)
       Language: Rust
       implementer: |
         <a href="https://oct.network/">Octopus Network</a>

@@ -34,7 +34,7 @@
           IBC Packet Lifecycle
         </div>
       </h1>
-      <img src="~/assets/images/IBCgraphic.png" class="w-full" />
+      <img src="~/assets/images/packet_flow.png" class="w-full" />
     </div>
     <div class="relative max-w-6xl px-8 py-24 mx-auto md:px-12">
       <img src="~/assets/images/illu-3.svg" class="w-full" />

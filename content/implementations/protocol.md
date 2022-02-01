@@ -7,6 +7,7 @@ public:
       framework: Cosmos SDK
       implementer: <a href="https://interchain.berlin">Interchain GmbH</a>
       links: |
+        <a href="https://github.com/cosmos/ibc-go/blob/main/docs/roadmap/roadmap.md">roadmap</a>,
         <a href="https://github.com/cosmos/ibc-go">source code</a>, <a href="https://ibc.cosmos.network/main/ibc/overview.html"> docs</a>
   - badgeLabel: Stable Release  
     badgeColor: green

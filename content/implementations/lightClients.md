@@ -18,15 +18,6 @@ public:
         <a href="https://informal.systems">Informal Systems</a>
       links: |
         <a href="https://github.com/informalsystems/tendermint-rs">source code</a>
-  - badgeLabel: Stable Release
-    badgeColor: green
-    content:
-      Light Client: Solo Machine
-      Language: Go
-      implementers: |
-        <a href="https://interchain.berlin">Interchain GmbH</a>
-      links: |
-        <a href="https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/06-solomachine">source code</a>
   - badgeLabel: In Development 
     badgeColor: green
     content:
@@ -92,6 +83,15 @@ solo_machines:
         <a href="https://github.com/crypto-com">Crypto.com</a>
       links: |
         <a href="https://github.com/devashishdxt/stag">source code</a>
+  - badgeLabel: Stable Release
+    badgeColor: green
+    content:
+      Light Client: Solo Machine
+      Language: Go
+      implementers: |
+        <a href="https://interchain.berlin">Interchain GmbH</a>
+      links: |
+        <a href="https://github.com/cosmos/ibc-go/tree/main/modules/light-clients/06-solomachine">source code</a>
 
 enterprise:
   - badgeLabel: Upcoming

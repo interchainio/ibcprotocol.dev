@@ -1,11 +1,11 @@
 ---
 implementations:
 
-- title: Core Logic 
+- title: IBC Transport Layer Implementations
   subtitle: 
   link: /protocol
   icon: 
-- title: Light Clients
+- title: Light Client Implementations
   subtitle: 
   link: /lightClients
   icon: 
@@ -13,7 +13,7 @@ implementations:
   subtitle:
   link: /applications
   icon:
-- title: Relayers
+- title: Relayer Implementations
   subtitle:
   link: /relayers
   icon:

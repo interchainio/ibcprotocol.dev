@@ -74,7 +74,7 @@ public:
         <a href="https://github.com/harmony-one/bounties/issues/73">Bounty</a>
 
 solo_machines:
-- badgeLabel: Stable 
+  - badgeLabel: Stable 
     badgeColor: green
     content:
       Light Client: Solo Machine
@@ -83,7 +83,7 @@ solo_machines:
         <a href="https://github.com/crypto-com">Crypto.com</a>
       links: |
         <a href="https://github.com/crypto-com/ibc-solo-machine">source code</a>
-- badgeLabel: Stable 
+  - badgeLabel: Stable 
     badgeColor: green
     content:
       Light Client: In-Browser Solo Machine

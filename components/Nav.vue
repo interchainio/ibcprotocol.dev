@@ -7,7 +7,7 @@
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
           <NuxtLink to="/implementations" class="inline-flex">
-            Implementations & Docs
+            Implementations
             <svg
               class="-mr-1 ml-2 h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@
           </NuxtLink>
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
-          <NuxtLink to="/documentation">Protocol Specs</NuxtLink>
+          <NuxtLink to="/documentation">Protocol Specs & Docs</NuxtLink>
         </li>
         <li class="hidden md:inline-block mx-8 py-6">
           <NuxtLink to="/tutorials">Tutorials</NuxtLink>

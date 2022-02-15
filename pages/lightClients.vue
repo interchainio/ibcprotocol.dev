@@ -15,6 +15,17 @@
         </div>
       </div>
 
+      <h3 class="heading-sm mb-6">Solo Machines</h3>
+      <div class="flex flex-wrap">
+        <div class="flex flex-wrap md:-mx-4">
+          <Card
+            v-for="(item, idx) in page.solo_machines"
+            :key="idx"
+            :item="item"
+          />
+        </div>
+      </div>
+
       <h3 class="heading-sm mb-6">Enterprise</h3>
       <div class="flex flex-wrap">
         <div class="flex flex-wrap md:-mx-4">

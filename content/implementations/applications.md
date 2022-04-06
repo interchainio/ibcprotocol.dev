@@ -5,7 +5,7 @@ public:
     link: https://github.com/cosmos/ibc-go/tree/main/modules/apps/transfer
   - title: ICS27 - Interchain Accounts 
     description: encode then execute a transaction from blockchain A on blockchain B in ibc-go
-    link: https://github.com/cosmos/ibc-go/tree/interchain-accounts/modules/apps/27-interchain-accounts
+    link: https://interchain-io.medium.com/welcome-to-the-ibc-gang-lets-talk-f469883e0ffe
   - title: ICS29 - Fee Middleware
     description: incentivised packet relaying in ibc-go
     link: https://github.com/cosmos/ibc-go/tree/ics29-fee-middleware/modules/apps/29-fee

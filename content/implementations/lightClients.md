@@ -26,7 +26,7 @@ public:
       implementers: |
         <a href="https://github.com/ChorusOne/celo-cosmos-bridge">Chorus One</a>
       links: |
-        repo to be updated
+        <a href="https://github.com/ChorusOne/tendermint-sol">source code</a>
   - badgeLabel: In Development
     badgeColor: green
     content:

@@ -4,7 +4,7 @@ community:
 
 - title: Chat with IBC Developers
   subtitle: Community Discord
-  link: https://discord.gg/vcExX9T
+  link: https://discord.gg/MkvKh6jpsA 
   icon: https://qph.fs.quoracdn.net/main-qimg-87a64f014bc99ffeeb93f67e056af26c
 - title: Technical / Security Updates
   subtitle: Telegram

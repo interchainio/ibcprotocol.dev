@@ -12,9 +12,9 @@ resources:
       This link will take you to the IBC technical specifications
     button: Go to GitHub repo
     link: https://github.com/cosmos/ibc
-  - title: Interchain Developer Academy Resources
+  - title: Interchain Developer Portal
     slug: overview
     description: |
-      This link will take you to the Interchain Developer Academy IBC Resources
+      This link will take you to the Interchain Developer Portal Resources
     button: Go to Resources
-    link: https://interchainacademy.cosmos.network/academy/ibc/ibc-tao-dev.html
+    link: https://tutorials.cosmos.network/academy/4-ibc/

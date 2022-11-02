@@ -33,9 +33,9 @@ public:
       Light Client: BEEFY (Substrate)
       Language: Rust
       implementer: |
-        <a href="https://oct.network/">Octopus Network</a>, <a href="https://www.composable.finance/">Composable Finance</a>, <a href="https://www.polymerlabs.org/">Polymer Labs</a> 
+        <a href="https://www.composable.finance/">Composable Finance</a>
       links: |
-        <a href="https://github.com/octopus-network/beefy-light-client">Octopus Network BEEFY light client</a>
+        <a href="https://github.com/ComposableFi/centauri/tree/master/light-clients/ics11-beefy/">BEEFY light client</a>
   - badgeLabel: In development
     badgeColor: green
     content:
